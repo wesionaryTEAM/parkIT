@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Login from './Layouts/Login'
 
 const App: React.FC = () => {
   return (
@@ -11,12 +12,12 @@ const App: React.FC = () => {
           exact
           path='/'
           component={() => (            
-             <div>hello world!</div>
+            <Login />
           )}/>
         </Switch>
       </Router>
     </div>
-  );
+  )
 }
 
 export default App;
