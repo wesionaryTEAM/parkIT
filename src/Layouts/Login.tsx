@@ -31,6 +31,9 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(3, 0, 2),
     },
     gridItems: {
+    },
+    loginCard : {
+        width: "100%"
     }
 }));
 
@@ -48,6 +51,7 @@ function Login() {
                 alignContent="center"
                 justify="center"
                 alignItems="center"
+                className= {classes.loginCard}
                 spacing={6}>
                 <Grid
                     className={classes.gridItems}
