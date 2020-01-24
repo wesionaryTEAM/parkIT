@@ -39,5 +39,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy":"https://us-central1-parkit-27a48.cloudfunctions.net/api/"
+  
 }
