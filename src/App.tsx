@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Login from './Layouts/Login'
+import Login from './components/Layouts/Login'
 
 const App: React.FC = () => {
   return (
@@ -14,6 +14,7 @@ const App: React.FC = () => {
           component={() => (            
             <Login />
           )}/>
+          
         </Switch>
       </Router>
     </div>
