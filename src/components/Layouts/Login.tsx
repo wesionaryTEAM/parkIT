@@ -9,8 +9,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import logo from '../assests/images/logo.png';
+import logo from '../../assests/images/logo.png';
 import { Paper } from '@material-ui/core';
+import { ButtonComponent } from './ButtonComponent';
 
 const useStyles = makeStyles(theme => ({
     container: {
@@ -20,8 +21,7 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: theme.spacing(6)
-
+        padding: theme.spacing(6),
     },
     form: {
         width: '100%',
@@ -30,10 +30,11 @@ const useStyles = makeStyles(theme => ({
     submit: {
         margin: theme.spacing(3, 0, 2),
     },
-    gridItems: {
-    },
-    loginCard : {
+    loginCard: {
         width: "100%"
+    },
+    paperText:{
+        color: "#41a886"
     }
 }));
 
@@ -49,12 +50,11 @@ function Login() {
             <Grid
                 container
                 alignContent="center"
-                justify="center"
                 alignItems="center"
-                className= {classes.loginCard}
+                justify="center"
+                className={classes.loginCard}
                 spacing={6}>
                 <Grid
-                    className={classes.gridItems}
                     item
                     md={4}>
                     <img src={logo} alt="Parkit Logo" />
@@ -64,7 +64,7 @@ function Login() {
                     item
                     md={7}>
                     <Paper className={classes.paper}>
-                        <Typography variant="h5">
+                        <Typography className={classes.paperText} variant="h5">
                             Sign in
                     </Typography>
                         <form className={classes.form} noValidate>
@@ -91,17 +91,16 @@ function Login() {
                                 autoComplete="current-password"
                             />
                             <FormControlLabel
+
                                 control={<Checkbox value="remember" color="primary" />}
                                 label="Remember me"
                             />
-                            <Button
-                                type="submit"
-                                fullWidth
-                                variant="contained"
-                                color="primary"
-                                className={classes.submit}>
+                            <ButtonComponent
+                                primary
+                                size="large"
+                                type="submit">
                                 Sign In
-                        </Button>
+                                </ButtonComponent>
                             <Grid container>
                                 <Grid item xs>
                                     <Link href="#" variant="body2">
