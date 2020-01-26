@@ -1,6 +1,2 @@
-import React from 'react'
-export default function index(){
-    return(
-        <div></div>
-    )
-}
+export { default as Login } from "./Auth/Login";
+export { default as Register } from "./Auth/Register";

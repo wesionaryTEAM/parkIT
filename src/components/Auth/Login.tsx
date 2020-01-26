@@ -1,17 +1,19 @@
-import React from 'react'
-import Button from '@material-ui/core/Button';
+import React, { useContext, useState } from "react";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import logo from '../../assests/images/logo.png';
 import { Paper } from '@material-ui/core';
-import { ButtonComponent } from './ButtonComponent';
+import { ButtonComponent } from '../Layouts/ButtonComponent';
+import { Link, useHistory, useLocation } from 'react-router-dom'
+import { userDataProps } from '../../interface/UserInterface'
+import validator from "validator";
+import axios from 'axios'
 
 const useStyles = makeStyles(theme => ({
     container: {
@@ -33,14 +35,111 @@ const useStyles = makeStyles(theme => ({
     loginCard: {
         width: "100%"
     },
-    paperText:{
+    paperText: {
         color: "#41a886"
-    }
+    },
+    customError: {
+        color: 'red',
+        fontSize: '0.8rem',
+        marginTop: '10px'
+    },
+
+
 }));
 
 
-function Login() {
+interface formError extends userDataProps {
+    message: string;
+
+
+}
+
+
+
+function Login(props: userDataProps) {
+   
     const classes = useStyles();
+    const history = useHistory();
+    const location = useLocation();
+    const [values, setValues] = useState({
+        email: "",
+        password: ""
+    } as userDataProps);
+    const [errors, setErrors] = useState({} as formError);
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+        setLoading(true);
+
+        // if (!validateForm()) {
+        //     setLoading(false);
+        //     return;
+        // }
+
+        const userData = {
+            email: values.email,
+            password: values.password,
+            
+        }
+
+        axios.post('login',userData)
+            .then((res) => {
+                console.log(res.data);
+                localStorage.setItem('token', `Bearer ${res.data.token}`);
+                setLoading(false);
+                history.push('/');
+
+            })
+            .catch((err) => {
+                console.log(err);
+                setErrors(err.response.data);
+                setLoading(false);
+               
+
+            });
+
+
+
+    }
+
+    const handleChange = (e: any) => {
+        e.persist();
+        setValues(values => ({
+            ...values,
+            [e.target.name]: e.target.value
+          }));
+
+
+
+    };
+
+    const validateForm = () => {
+        const errors: { [key: string]: string } = {};
+    
+        if (!validator.trim(values.email)) {
+          errors.email = "Email field is required!";
+        }
+    
+        if (!validator.trim(values.password)) {
+          errors.password = "Password field is required!";
+        }
+    
+        handleErrors(errors);
+    
+        return Object.keys(errors).length === 0;
+      };
+    
+      const handleErrors = (newErrors: { [key: string]: string }) => {
+        setErrors(errors => ({
+          ...errors,
+          ...newErrors
+        }));
+      };
+    
+
+
+
     return (
         <Container
             component="main"
@@ -67,29 +166,43 @@ function Login() {
                         <Typography className={classes.paperText} variant="h5">
                             Sign in
                     </Typography>
-                        <form className={classes.form} noValidate>
+                        <form className={classes.form} noValidate onSubmit={handleSubmit}>
                             <TextField
                                 variant="outlined"
                                 margin="normal"
-                                required
+                                value={values.email}
                                 fullWidth
                                 id="email"
                                 label="Email Address"
                                 name="email"
+                                type="email"
                                 autoComplete="email"
-                                autoFocus
+                                onChange={handleChange}
+                                helperText={errors.email}
+                                error={errors.email ? true : false}
+
+
                             />
                             <TextField
                                 variant="outlined"
                                 margin="normal"
-                                required
+                                value={values.password}
                                 fullWidth
                                 name="password"
                                 label="Password"
                                 type="password"
-                                id="password"
-                                autoComplete="current-password"
+                                onChange={handleChange}
+                                helperText={errors.password}
+                                error={errors.password ? true : false}
+
                             />
+                            {errors.message && (
+                                <Typography variant="body2" className={classes.customError}>
+                                    {errors.message}
+                                </Typography>)}
+
+
+
                             <FormControlLabel
 
                                 control={<Checkbox value="remember" color="primary" />}
@@ -98,17 +211,21 @@ function Login() {
                             <ButtonComponent
                                 primary
                                 size="large"
-                                type="submit">
+                                type="submit"
+                                disabled={loading}
+                                loading={loading}
+                            >
                                 Sign In
+
                                 </ButtonComponent>
                             <Grid container>
                                 <Grid item xs>
-                                    <Link href="#" variant="body2">
+                                    <Link to="#">
                                         Forgot password?
                                     </Link>
                                 </Grid>
                                 <Grid item>
-                                    <Link href="#" variant="body2">
+                                    <Link to="/register" >
                                         {"Don't have an account? Sign Up"}
                                     </Link>
                                 </Grid>

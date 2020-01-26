@@ -45,10 +45,7 @@ const useStyles = makeStyles({
     buttonProgress: {
         color: green[500],
         position: "absolute",
-        top: "50%",
-        left: "50%",
-        marginTop: -12,
-        marginLeft: -12
+        
     }
 });
 
@@ -60,7 +57,9 @@ interface StyledButtonProps {
     onClick?: (event?: any) => void;
     type?: "submit";
     loading?: boolean;
+   
 }
+
 
 export const ButtonComponent: React.SFC<StyledButtonProps> = props => {
     const buttonStyles = useStyles();
@@ -82,10 +81,9 @@ export const ButtonComponent: React.SFC<StyledButtonProps> = props => {
                 onClick={props.onClick}
             >
                 <span className={textClasses}>{props.children}</span>
+                {props.loading && (<CircularProgress className={buttonStyles.buttonProgress} size={30}  />)}
             </Button>
-            {props.loading && (
-                <CircularProgress size={24} className={buttonStyles.buttonProgress} />
-            )}
+            
         </div>
     );
 };
