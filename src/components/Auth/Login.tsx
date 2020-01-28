@@ -98,6 +98,7 @@ function Login(props: userDataProps) {
 
         if (!validateForm()) {
             setLoading(false);
+            history.push("/index");
             return;
         }
 
@@ -107,19 +108,19 @@ function Login(props: userDataProps) {
 
         }
         // TODO firebase method call signInWithEmailAndPassword(email,password)
-        axios.post('login', userData)
-            .then((res) => {
-                console.log(res.data);
-                localStorage.setItem('token', `Bearer ${res.data.token}`);
-                setLoading(false);
-                history.push('/');
+        // axios.post('login', userData)
+        //     .then((res) => {
+        //         console.log(res.data);
+        //         localStorage.setItem('token', `Bearer ${res.data.token}`);
+        //         setLoading(false);
+        //         history.push('/');
 
-            })
-            .catch((err) => {
-                console.log(err);
-                setErrors(err.response.data);
-                setLoading(false);
-            });
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //         setErrors(err.response.data);
+        //         setLoading(false);
+        //     });
     }
 
     const handleChange = (e: any) => {
