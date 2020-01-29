@@ -5,6 +5,7 @@ import { Login } from './components/index'
 import { Register } from './components/index'
 import { Provider } from 'react-redux'
 import configureStore from './store'
+import Index from './components/pages/home'
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,12 @@ const App: React.FC = () => {
               path='/'
               component={Login}>
             </Route>
+
+            <Route
+              exact
+              path="/index"
+              component={Index} />
+
             <Route exact
               path="/register"
               component={Register}>
