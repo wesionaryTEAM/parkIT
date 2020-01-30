@@ -1,8 +1,11 @@
 import React from 'react';
 import Drawer from '../../Layouts/Navigation/Drawer'
+import Home from './Home'
 const index = () => {
-    return(
-        <Drawer />
+    return (
+        <Drawer>
+            <Home />
+        </Drawer>
     )
 }
 
