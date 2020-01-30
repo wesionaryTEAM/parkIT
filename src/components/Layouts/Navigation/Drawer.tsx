@@ -1,28 +1,40 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
+import Avatar from '@material-ui/core/Avatar'
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
+import DraftsIcon from '@material-ui/icons/Drafts';
 import SettingsIcon from '@material-ui/icons/Settings';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import LanguageIcon from '@material-ui/icons/Language';
 import HistoryIcon from '@material-ui/icons/History';
-import PlaceIcon from '@material-ui/icons/Place';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import AppsIcon from '@material-ui/icons/Apps';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import logo from '../../../assests/images/logo.png';
+import Badge from '@material-ui/core/Badge';
+import MenuItem from '@material-ui/core/MenuItem';
+import Menu from '@material-ui/core/Menu';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import MailIcon from '@material-ui/icons/Mail';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import MoreIcon from '@material-ui/icons/MoreVert';
+import userImageUrl from '../../../assests/images/user.jpg';
+import Grid from '@material-ui/core/Grid';
+import verifiedIconUrl from '../../../assests/images/verified.png'
+import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
+import LoyaltyIcon from '@material-ui/icons/Loyalty';
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import BookmarkIcon from '@material-ui/icons/Bookmark';
+import HelpIcon from '@material-ui/icons/Help';
+import GavelIcon from '@material-ui/icons/Gavel';
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -37,6 +49,7 @@ const useStyles = makeStyles(theme => ({
             width: drawerWidth,
             flexShrink: 0,
         },
+        textAlign: "left",
     },
     appBar: {
         [theme.breakpoints.up('sm')]: {
@@ -44,17 +57,12 @@ const useStyles = makeStyles(theme => ({
             marginLeft: drawerWidth,
         },
     },
-    menuButton: {
-        marginRight: theme.spacing(2),
-        [theme.breakpoints.up('sm')]: {
-            display: 'none',
-        },
-    },
+
     toolbar: {
         minHeight: '16px'
     },
     toolbar1: {
-        minHeight: '64px'
+        minHeight: '60px'
     },
     drawerPaper: {
         width: drawerWidth,
@@ -62,6 +70,61 @@ const useStyles = makeStyles(theme => ({
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
+    },
+    grow: {
+        flexGrow: 1,
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            display: 'none',
+        },
+    },
+    menuButton1: {
+        marginRight: theme.spacing(2),
+    },
+    title: {
+        display: 'none',
+        [theme.breakpoints.up('sm')]: {
+            display: 'block',
+        },
+    },
+
+    inputRoot: {
+        color: 'inherit',
+    },
+    sectionDesktop: {
+        display: 'none',
+        [theme.breakpoints.up('md')]: {
+            display: 'flex',
+        },
+    },
+    sectionMobile: {
+        display: 'flex',
+        [theme.breakpoints.up('md')]: {
+            display: 'none',
+        },
+    },
+    large: {
+        margin: "auto",
+        backgroundColor: "#fff",
+        width: 85,
+        height: 85,
+        boxShadow: "0px 8px 10px 0px rgba(0,0,0,0.12)",
+        marginBottom: '16px'
+    },
+    verifiedIcon: {
+        height: 40,
+        width: 40,
+        padding: 5
+    },
+    grid: {
+        textAlign: "center",
+        lineHeight: 200
+    },
+    drawertitle: {
+        paddingLeft: 8,
+        color: "#757575"
     },
 }));
 
@@ -74,20 +137,109 @@ function ResponsiveDrawer(props: any) {
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+
+    const isMenuOpen = Boolean(anchorEl);
+    const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+    const handleProfileMenuOpen = (event: any) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleMobileMenuClose = () => {
+        setMobileMoreAnchorEl(null);
+    };
+
+    const handleMenuClose = () => {
+        setAnchorEl(null);
+        handleMobileMenuClose();
+    };
+
+    const handleMobileMenuOpen = (event: any) => {
+        setMobileMoreAnchorEl(event.currentTarget);
+    };
+
+    const menuId = 'primary-search-account-menu';
+    // AppBar Dropdown Menu
+    const renderMenu = (
+        <Menu
+            anchorEl={anchorEl}
+            anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+            id={menuId}
+            keepMounted
+            transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+            open={isMenuOpen}
+            onClose={handleMenuClose}>
+            <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+            <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+            <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
+        </Menu>
+    );
+
+    // MobileDropdown
+    const mobileMenuId = 'primary-search-account-menu-mobile';
+    const renderMobileMenu = (
+        <Menu
+            anchorEl={mobileMoreAnchorEl}
+            anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+            id={mobileMenuId}
+            keepMounted
+            transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+            open={isMobileMenuOpen}
+            onClose={handleMobileMenuClose}>
+            <MenuItem>
+                <IconButton color="inherit">
+                    <Badge badgeContent={4} color="secondary">
+                        <MailIcon />
+                    </Badge>
+                </IconButton>
+                <p>Messages</p>
+            </MenuItem>
+            <MenuItem>
+                <IconButton aria-label="show 11 new notifications" color="inherit">
+                    <Badge badgeContent={11} color="secondary">
+                        <NotificationsIcon />
+                    </Badge>
+                </IconButton>
+                <p>Notifications</p>
+            </MenuItem>
+            <MenuItem onClick={handleProfileMenuOpen}>
+                <IconButton
+                    aria-label="account of current user"
+                    aria-controls="primary-search-account-menu"
+                    aria-haspopup="true"
+                    color="inherit"
+                >
+                    <AccountCircle />
+                </IconButton>
+                <p>Profile</p>
+            </MenuItem>
+        </Menu>
+    );
 
     const drawer = (
         <div>
+            {/* For Upper Spacing */}
             <div className={classes.toolbar} />
-            <img className={classes.logo} src={logo} alt="Parkit Logo" />
+            <Avatar src={userImageUrl} alt="user" className={classes.large} />
+            <Grid container justify="center" alignItems="center">
+                <Grid item>
+                    <Typography variant="body1" color="primary">Aiska Basnet</Typography>
+                </Grid>
+                <Grid item>
+                    <img src={verifiedIconUrl} alt="Verified Account" className={classes.verifiedIcon} />
+                </Grid>
+            </Grid>
             <Divider />
             <List>
                 <ListItem button key={"Home"}>
                     <ListItemIcon><AppsIcon /></ListItemIcon>
                     <ListItemText primary={"Home"} />
                 </ListItem>
-                <ListItem button key={"Rent a place"}>
-                    <ListItemIcon><PlaceIcon /></ListItemIcon>
-                    <ListItemText primary={"Rent a place"} />
+                <ListItem button key={"Inbox"}>
+                    <ListItemIcon><DraftsIcon /></ListItemIcon>
+                    <ListItemText primary={"Inbox"} />
                 </ListItem>
                 <ListItem button key={"History"}>
                     <ListItemIcon><HistoryIcon /></ListItemIcon>
@@ -96,6 +248,43 @@ function ResponsiveDrawer(props: any) {
 
             </List>
             <Divider />
+            <Typography variant="caption" className={classes.drawertitle}>ACCOUNTS</Typography>
+            <List>
+                <ListItem button key={"Profile"}>
+                    <ListItemIcon><AccountBoxIcon /></ListItemIcon>
+                    <ListItemText primary={"Profile"} />
+                </ListItem>
+                <ListItem button key={"Saved Add"}>
+                    <ListItemIcon><BookmarkIcon /></ListItemIcon>
+                    <ListItemText primary={"Saved Address"} />
+                </ListItem>
+            </List>
+            <Divider />
+            <Typography variant="caption" className={classes.drawertitle}>OFFERS</Typography>
+            <List>
+                <ListItem button key={"Discounts"}>
+                    <ListItemIcon><LoyaltyIcon /></ListItemIcon>
+                    <ListItemText primary={"Get Discounts"} />
+                </ListItem>
+                <ListItem button key={"Promo"}>
+                    <ListItemIcon><CardGiftcardIcon /></ListItemIcon>
+                    <ListItemText primary={"Promotions"} />
+                </ListItem>
+            </List>
+            <Divider />
+            <Typography variant="caption" className={classes.drawertitle}>HELP AND LEGAL</Typography>
+            <List>
+                <ListItem button key={"Help"}>
+                    <ListItemIcon><HelpIcon /></ListItemIcon>
+                    <ListItemText primary={"Help"} />
+                </ListItem>
+                <ListItem button key={"Legal"}>
+                    <ListItemIcon><GavelIcon /></ListItemIcon>
+                    <ListItemText primary={"Legal"} />
+                </ListItem>
+            </List>
+            <Divider />
+            <Typography variant="caption" className={classes.drawertitle}>SETTINGS</Typography>
             <List>
                 <ListItem button key={"Settings"}>
                     <ListItemIcon><SettingsIcon /></ListItemIcon>
@@ -104,10 +293,6 @@ function ResponsiveDrawer(props: any) {
                 <ListItem button key={"Change Language"}>
                     <ListItemIcon><LanguageIcon /></ListItemIcon>
                     <ListItemText primary={"Change Language"} />
-                </ListItem>
-                <ListItem button key={"Logout"}>
-                    <ListItemIcon><ExitToAppIcon /></ListItemIcon>
-                    <ListItemText primary={"Logout"} />
                 </ListItem>
             </List>
         </div>
@@ -129,9 +314,46 @@ function ResponsiveDrawer(props: any) {
                     </IconButton>
                     <Typography variant="h6" noWrap>
                         ParkIT
-          </Typography>
+                    </Typography>
+
+                    <div className={classes.grow} />
+                    <div className={classes.sectionDesktop}>
+                        <IconButton aria-label="show 4 new mails" color="inherit">
+                            <Badge badgeContent={4} color="secondary">
+                                <MailIcon />
+                            </Badge>
+                        </IconButton>
+                        <IconButton aria-label="show 17 new notifications" color="inherit">
+                            <Badge badgeContent={17} color="secondary">
+                                <NotificationsIcon />
+                            </Badge>
+                        </IconButton>
+                        <IconButton
+                            edge="end"
+                            aria-label="account of current user"
+                            aria-controls={menuId}
+                            aria-haspopup="true"
+                            onClick={handleProfileMenuOpen}
+                            color="inherit"
+                        >
+                            <AccountCircle />
+                        </IconButton>
+                    </div>
+                    <div className={classes.sectionMobile}>
+                        <IconButton
+                            aria-label="show more"
+                            aria-controls={mobileMenuId}
+                            aria-haspopup="true"
+                            onClick={handleMobileMenuOpen}
+                            color="inherit"
+                        >
+                            <MoreIcon />
+                        </IconButton>
+                    </div>
                 </Toolbar>
             </AppBar>
+            {renderMobileMenu}
+            {renderMenu}
             <nav className={classes.drawer}>
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                 <Hidden smUp implementation="css">
@@ -165,40 +387,11 @@ function ResponsiveDrawer(props: any) {
             </nav>
             <main className={classes.content}>
                 <div className={classes.toolbar1} />
-                <Typography paragraph>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-                    facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-                    gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-                    donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-                    adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-                    Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-                    imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-                    arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-                    donec massa sapien faucibus et molestie ac.
-        </Typography>
-                <Typography paragraph>
-                    Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-                    facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-                    tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-                    consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-                    vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-                    hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-                    tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-                    nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-                    accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+                {props.children}
             </main>
         </div>
     );
 }
 
-ResponsiveDrawer.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    container: PropTypes.instanceOf(typeof Element === 'undefined' ? Object : Element),
-};
 
 export default ResponsiveDrawer;
