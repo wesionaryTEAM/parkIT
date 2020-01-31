@@ -35,6 +35,7 @@ import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 import HelpIcon from '@material-ui/icons/Help';
 import GavelIcon from '@material-ui/icons/Gavel';
+import { useHistory } from 'react-router';
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -130,6 +131,7 @@ const useStyles = makeStyles(theme => ({
 
 function ResponsiveDrawer(props: any) {
     const { container } = props;
+    const history = useHistory();
     const classes = useStyles();
     const theme = useTheme();
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -250,7 +252,7 @@ function ResponsiveDrawer(props: any) {
             <Divider />
             <Typography variant="caption" className={classes.drawertitle}>ACCOUNTS</Typography>
             <List>
-                <ListItem button key={"Profile"}>
+                <ListItem button key={"Profile"} onClick={()=>history.push("/profile_add")}>
                     <ListItemIcon><AccountBoxIcon /></ListItemIcon>
                     <ListItemText primary={"Profile"} />
                 </ListItem>

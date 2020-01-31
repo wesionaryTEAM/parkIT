@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Login } from './components/index'
 import { Register } from './components/index'
 import Index from './components/pages/home'
+import ProfileAdd from './components/pages/Profile/ProfileAdd';
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -18,7 +19,11 @@ const App: React.FC = () => {
             exact
             path="/index"
             component={Index} />
-
+          <Route
+            exact
+            path="/profile_add"
+            component={ProfileAdd} />
+            
           <Route exact
             path="/register"
             component={Register}>
