@@ -6,7 +6,8 @@ import { Register } from './components/index'
 import { Provider } from 'react-redux'
 import configureStore from './store'
 import Index from './components/pages/home'
-
+import ProfileAdd from './components/pages/Profile/ProfileAdd';
+ 
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -28,6 +29,10 @@ const App: React.FC = () => {
               path="/register"
               component={Register}>
             </Route>
+            <Route
+            exact
+            path="/profile_add"
+            component={ProfileAdd} />
           </Switch>
         </Router>
       </Provider>
