@@ -1,183 +1,907 @@
-[debug] [2020-01-26T13:33:09.306Z] ----------------------------------------------------------------------
-[debug] [2020-01-26T13:33:09.308Z] Command:       /home/bikash/.nvm/versions/node/v10.15.3/bin/node /home/bikash/.nvm/versions/node/v10.15.3/bin/firebase serve
-[debug] [2020-01-26T13:33:09.308Z] CLI Version:   7.12.1
-[debug] [2020-01-26T13:33:09.308Z] Platform:      linux
-[debug] [2020-01-26T13:33:09.308Z] Node Version:  v10.15.3
-[debug] [2020-01-26T13:33:09.308Z] Time:          Sun Jan 26 2020 19:18:09 GMT+0545 (Nepal Time)
-[debug] [2020-01-26T13:33:09.308Z] ----------------------------------------------------------------------
-[debug] [2020-01-26T13:33:09.308Z] 
-[debug] [2020-01-26T13:33:09.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-01-26T13:33:09.317Z] > authorizing via signed-in user
-[debug] [2020-01-26T13:33:09.317Z] [iam] checking project parkit-27a48 for permissions ["firebase.projects.get"]
-[debug] [2020-01-26T13:33:09.318Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-01-26T13:33:09.318Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2020-02-02T04:19:33.815Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T04:19:33.817Z] Command:       /home/bikash/.nvm/versions/node/v10.15.3/bin/node /home/bikash/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2020-02-02T04:19:33.817Z] CLI Version:   7.12.1
+[debug] [2020-02-02T04:19:33.818Z] Platform:      linux
+[debug] [2020-02-02T04:19:33.818Z] Node Version:  v10.15.3
+[debug] [2020-02-02T04:19:33.818Z] Time:          Sun Feb 02 2020 10:04:33 GMT+0545 (Nepal Time)
+[debug] [2020-02-02T04:19:33.818Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T04:19:33.818Z] 
+[debug] [2020-02-02T04:19:33.824Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-02T04:19:33.824Z] > authorizing via signed-in user
+[debug] [2020-02-02T04:19:33.824Z] [iam] checking project parkit-27a48 for permissions ["firebase.projects.get"]
+[debug] [2020-02-02T04:19:33.825Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-02T04:19:33.825Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2020-01-26T13:33:09.705Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-26T13:33:09.781Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parkit-27a48:testIamPermissions  
+[debug] [2020-02-02T04:19:34.654Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T04:19:34.731Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parkit-27a48:testIamPermissions  
 
-[debug] [2020-01-26T13:33:11.846Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-26T13:33:11.849Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/parkit-27a48  
+[debug] [2020-02-02T04:19:37.101Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T04:19:37.104Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/parkit-27a48  
  
-[debug] [2020-01-26T13:33:12.887Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T04:19:38.328Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from '/home/bikash/Documents/projects/parkit'...
+[info] === Serving from '/home/bikash/Documents/projects/parkIT'...
 [info] 
 [warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
 [info] ✔  functions: Emulator started at http://localhost:5000
-[info] i  functions: Watching "/home/bikash/Documents/projects/parkit/functions" for Cloud Functions...
-[debug] [2020-01-26T13:33:13.242Z] [worker-pool] addWorker(~diagnostic~)
-[debug] [2020-01-26T13:33:13.242Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
-[debug] [2020-01-26T13:33:13.242Z] [worker-pool] submitWork(triggerId=)
-[debug] [2020-01-26T13:33:13.243Z] [worker-~diagnostic~-831900f4-3889-4fa6-9d74-7a80135b9d50]: Assigning socketPath: /tmp/fire_emu_10890.sock
-[debug] [2020-01-26T13:33:13.243Z] [worker-~diagnostic~-831900f4-3889-4fa6-9d74-7a80135b9d50]: BUSY
-[debug] [2020-01-26T13:33:13.568Z] [runtime-status] [10890] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkit/functions","node_version":"10.15.3"}
-[debug] [2020-01-26T13:33:13.570Z] [runtime-status] [10890] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-01-26T13:33:13.607Z] [runtime-status] [10890] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkit/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-01-26T13:33:13.609Z] [runtime-status] [10890] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkit/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-01-26T13:33:13.612Z] [runtime-status] [10890] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkit/functions/node_modules/firebase-functions/lib/index.js"}
+[info] i  functions: Watching "/home/bikash/Documents/projects/parkIT/functions" for Cloud Functions...
+[debug] [2020-02-02T04:19:38.687Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-02T04:19:38.687Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-02T04:19:38.687Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-02T04:19:38.688Z] [worker-~diagnostic~-abcb7551-72ae-4faf-9c4d-91be4d2d6e11]: Assigning socketPath: /tmp/fire_emu_2737.sock
+[debug] [2020-02-02T04:19:38.688Z] [worker-~diagnostic~-abcb7551-72ae-4faf-9c4d-91be4d2d6e11]: BUSY
+[debug] [2020-02-02T04:19:39.001Z] [runtime-status] [2737] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-02T04:19:39.003Z] [runtime-status] [2737] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-02T04:19:39.053Z] [runtime-status] [2737] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-02T04:19:39.081Z] [runtime-status] [2737] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:19:39.083Z] [runtime-status] [2737] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
 [info] ✔  functions[api]: http function initialized (http://localhost:5000/parkit-27a48/us-central1/api).
-[debug] [2020-01-26T13:33:20.504Z] [worker-~diagnostic~-831900f4-3889-4fa6-9d74-7a80135b9d50]: IDLE
-[debug] [2020-01-26T13:34:11.757Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-01-26T13:34:11.757Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-01-26T13:34:11.758Z] Accepted request POST /parkit-27a48/us-central1/api/signup --> api
-[debug] [2020-01-26T13:34:11.763Z] [worker-pool] addWorker(api)
-[debug] [2020-01-26T13:34:11.763Z] [worker-pool] Adding worker with key api, total=1
-[debug] [2020-01-26T13:34:11.763Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-01-26T13:34:11.763Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: Assigning socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:34:11.763Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: BUSY
-[debug] [2020-01-26T13:34:12.100Z] [runtime-status] [11077] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkit/functions","node_version":"10.15.3"}
-[debug] [2020-01-26T13:34:12.104Z] [runtime-status] [11077] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-01-26T13:34:12.106Z] [runtime-status] [11077] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkit/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-01-26T13:34:12.108Z] [runtime-status] [11077] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkit/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-01-26T13:34:12.109Z] [runtime-status] [11077] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkit/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-01-26T13:34:12.611Z] [runtime-status] [11077] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-02T04:19:46.935Z] [worker-~diagnostic~-abcb7551-72ae-4faf-9c4d-91be4d2d6e11]: IDLE
+[debug] [2020-02-02T04:22:20.910Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:22:20.910Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:22:20.911Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:22:20.915Z] [worker-pool] addWorker(api)
+[debug] [2020-02-02T04:22:20.915Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-02-02T04:22:20.915Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:22:20.915Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:22:20.915Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:22:21.336Z] [runtime-status] [3723] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-02T04:22:21.339Z] [runtime-status] [3723] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-02T04:22:21.341Z] [runtime-status] [3723] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-02T04:22:21.343Z] [runtime-status] [3723] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:22:21.344Z] [runtime-status] [3723] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:22:21.824Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-01-26T13:34:12.612Z] [runtime-status] [11077] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-01-26T13:34:12.612Z] [runtime-status] [11077] Running api in mode HTTPS
-[debug] [2020-01-26T13:34:12.617Z] [runtime-status] [11077] Attempting to listen to socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:34:12.623Z] [functions] Runtime ready! Sending request!
-[debug] [2020-01-26T13:34:12.711Z] [runtime-status] [11077] Ephemeral server handling POST request
-[debug] [2020-01-26T13:34:12.718Z] [runtime-status] [11077] Ephemeral server survived.
+[debug] [2020-02-02T04:22:21.825Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:22:21.825Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:22:21.829Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:22:21.836Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:22:21.853Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:22:21.867Z] [runtime-status] [3723] Ephemeral server survived.
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-01-26T13:34:12.721Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: IDLE
-[debug] [2020-01-26T13:34:12.722Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-01-26T13:34:29.130Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-01-26T13:34:29.130Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-01-26T13:34:29.131Z] Accepted request POST /parkit-27a48/us-central1/api/signup --> api
-[debug] [2020-01-26T13:34:29.131Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-01-26T13:34:29.131Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: Assigning socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:34:29.131Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: BUSY
-[debug] [2020-01-26T13:34:29.135Z] [runtime-status] [11077] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-02T04:22:21.867Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:22:21.868Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:24:11.982Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:24:11.983Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:24:11.983Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:24:11.983Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:24:11.983Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:24:11.983Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:24:11.986Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-01-26T13:34:29.135Z] [runtime-status] [11077] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-01-26T13:34:29.135Z] [runtime-status] [11077] Running api in mode HTTPS
-[debug] [2020-01-26T13:34:29.135Z] [runtime-status] [11077] Attempting to listen to socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:34:29.137Z] [functions] Runtime ready! Sending request!
-[debug] [2020-01-26T13:34:29.143Z] [runtime-status] [11077] Ephemeral server handling POST request
-[debug] [2020-01-26T13:34:29.147Z] [runtime-status] [11077] Ephemeral server survived.
+[debug] [2020-02-02T04:24:11.987Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:24:11.987Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:24:11.988Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:24:11.989Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:24:12.011Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:24:12.013Z] [runtime-status] [3723] Ephemeral server survived.
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-01-26T13:34:29.148Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: IDLE
-[debug] [2020-01-26T13:34:29.148Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-01-26T13:37:13.902Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-01-26T13:37:13.902Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-01-26T13:37:13.902Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-01-26T13:37:13.902Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-01-26T13:37:13.902Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: Assigning socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:37:13.903Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: BUSY
-[debug] [2020-01-26T13:37:13.905Z] [runtime-status] [11077] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-02T04:24:12.014Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:24:12.014Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:25:02.587Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:25:02.588Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:25:02.588Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:25:02.588Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:25:02.588Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:25:02.588Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:25:02.592Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-01-26T13:37:13.906Z] [runtime-status] [11077] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-01-26T13:37:13.907Z] [runtime-status] [11077] Running api in mode HTTPS
-[debug] [2020-01-26T13:37:13.907Z] [runtime-status] [11077] Attempting to listen to socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:37:13.908Z] [functions] Runtime ready! Sending request!
-[debug] [2020-01-26T13:37:13.925Z] [runtime-status] [11077] Ephemeral server handling POST request
-[debug] [2020-01-26T13:37:13.925Z] [runtime-status] [11077] Ephemeral server survived.
+[debug] [2020-02-02T04:25:02.592Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:25:02.592Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:25:02.592Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:25:02.593Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:25:02.601Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:25:02.603Z] [runtime-status] [3723] Ephemeral server survived.
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-01-26T13:37:13.926Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: IDLE
-[debug] [2020-01-26T13:37:13.926Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-01-26T13:39:21.560Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-01-26T13:39:21.560Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-01-26T13:39:21.560Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-01-26T13:39:21.560Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-01-26T13:39:21.560Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: Assigning socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:39:21.560Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: BUSY
-[debug] [2020-01-26T13:39:21.567Z] [runtime-status] [11077] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-02T04:25:02.603Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:25:02.603Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:25:10.011Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:25:10.011Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:25:10.011Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:25:10.011Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:25:10.011Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:25:10.011Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:25:10.014Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-01-26T13:39:21.567Z] [runtime-status] [11077] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-01-26T13:39:21.567Z] [runtime-status] [11077] Running api in mode HTTPS
-[debug] [2020-01-26T13:39:21.567Z] [runtime-status] [11077] Attempting to listen to socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:39:21.568Z] [functions] Runtime ready! Sending request!
-[debug] [2020-01-26T13:39:21.573Z] [runtime-status] [11077] Ephemeral server handling POST request
-[debug] [2020-01-26T13:39:21.576Z] [runtime-status] [11077] Ephemeral server survived.
+[debug] [2020-02-02T04:25:10.015Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:25:10.015Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:25:10.016Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:25:10.017Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:25:10.023Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:25:10.027Z] [runtime-status] [3723] Ephemeral server survived.
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-01-26T13:39:21.577Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: IDLE
-[debug] [2020-01-26T13:39:21.577Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-01-26T13:40:32.157Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-01-26T13:40:32.157Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-01-26T13:40:32.157Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-01-26T13:40:32.157Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-01-26T13:40:32.157Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: Assigning socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:40:32.157Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: BUSY
-[debug] [2020-01-26T13:40:32.159Z] [runtime-status] [11077] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-02T04:25:10.028Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:25:10.028Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:25:15.331Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:25:15.332Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:25:15.332Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:25:15.332Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:25:15.333Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:25:15.333Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:25:15.334Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-01-26T13:40:32.160Z] [runtime-status] [11077] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-01-26T13:40:32.160Z] [runtime-status] [11077] Running api in mode HTTPS
-[debug] [2020-01-26T13:40:32.160Z] [runtime-status] [11077] Attempting to listen to socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:40:32.163Z] [functions] Runtime ready! Sending request!
-[debug] [2020-01-26T13:40:32.169Z] [runtime-status] [11077] Ephemeral server handling POST request
-[debug] [2020-01-26T13:40:32.174Z] [runtime-status] [11077] Ephemeral server survived.
+[debug] [2020-02-02T04:25:15.336Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:25:15.336Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:25:15.337Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:25:15.339Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:25:15.345Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:25:15.345Z] [runtime-status] [3723] Ephemeral server survived.
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-01-26T13:40:32.175Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: IDLE
-[debug] [2020-01-26T13:40:32.175Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-01-26T13:40:39.693Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-01-26T13:40:39.693Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-01-26T13:40:39.693Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-01-26T13:40:39.693Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-01-26T13:40:39.693Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: Assigning socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:40:39.693Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: BUSY
-[debug] [2020-01-26T13:40:39.696Z] [runtime-status] [11077] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-02T04:25:15.346Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:25:15.346Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:25:26.103Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:25:26.104Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:25:26.104Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:25:26.104Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:25:26.104Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:25:26.104Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:25:26.107Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-01-26T13:40:39.696Z] [runtime-status] [11077] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-01-26T13:40:39.696Z] [runtime-status] [11077] Running api in mode HTTPS
-[debug] [2020-01-26T13:40:39.696Z] [runtime-status] [11077] Attempting to listen to socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:40:39.697Z] [functions] Runtime ready! Sending request!
-[debug] [2020-01-26T13:40:39.704Z] [runtime-status] [11077] Ephemeral server handling POST request
-[debug] [2020-01-26T13:40:39.740Z] [runtime-status] [11077] Ephemeral server survived.
+[debug] [2020-02-02T04:25:26.108Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:25:26.108Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:25:26.108Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:25:26.110Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:25:26.115Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:25:26.116Z] [runtime-status] [3723] Ephemeral server survived.
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-01-26T13:40:40.834Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: IDLE
-[debug] [2020-01-26T13:40:40.834Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-01-26T13:40:55.673Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-01-26T13:40:55.673Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-01-26T13:40:55.673Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-01-26T13:40:55.673Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-01-26T13:40:55.673Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: Assigning socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:40:55.673Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: BUSY
-[debug] [2020-01-26T13:40:55.677Z] [runtime-status] [11077] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-02T04:25:26.117Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:25:26.117Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:26:12.679Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:26:12.680Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:26:12.680Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:26:12.680Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:26:12.680Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:26:12.680Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:26:12.682Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-01-26T13:40:55.678Z] [runtime-status] [11077] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-01-26T13:40:55.678Z] [runtime-status] [11077] Running api in mode HTTPS
-[debug] [2020-01-26T13:40:55.678Z] [runtime-status] [11077] Attempting to listen to socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:40:55.679Z] [functions] Runtime ready! Sending request!
-[debug] [2020-01-26T13:40:55.684Z] [runtime-status] [11077] Ephemeral server handling POST request
-[debug] [2020-01-26T13:40:55.687Z] [runtime-status] [11077] Ephemeral server survived.
+[debug] [2020-02-02T04:26:12.684Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:26:12.684Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:26:12.684Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:26:12.687Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:26:12.692Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:26:12.693Z] [runtime-status] [3723] Ephemeral server survived.
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-01-26T13:40:56.408Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: IDLE
-[debug] [2020-01-26T13:40:56.408Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-01-26T13:40:58.684Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-01-26T13:40:58.684Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-01-26T13:40:58.685Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-01-26T13:40:58.685Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-01-26T13:40:58.685Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: Assigning socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:40:58.685Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: BUSY
-[debug] [2020-01-26T13:40:58.688Z] [runtime-status] [11077] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-02T04:26:12.695Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:26:12.695Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:26:30.368Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:26:30.368Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:26:30.368Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:26:30.368Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:26:30.368Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:26:30.368Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:26:30.371Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-01-26T13:40:58.690Z] [runtime-status] [11077] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-01-26T13:40:58.690Z] [runtime-status] [11077] Running api in mode HTTPS
-[debug] [2020-01-26T13:40:58.690Z] [runtime-status] [11077] Attempting to listen to socketPath: /tmp/fire_emu_11077.sock
-[debug] [2020-01-26T13:40:58.691Z] [functions] Runtime ready! Sending request!
-[debug] [2020-01-26T13:40:58.697Z] [runtime-status] [11077] Ephemeral server handling POST request
-[debug] [2020-01-26T13:40:58.699Z] [runtime-status] [11077] Ephemeral server survived.
-[info] >  {"user":{"uid":"1mBgeRz36mY0B4mG9UuxwRKWej32","displayName":null,"photoURL":null,"email":"bikash.bhandari05@gmail.com","emailVerified":false,"phoneNumber":null,"isAnonymous":false,"tenantId":null,"providerData":[{"uid":"bikash.bhandari05@gmail.com","displayName":null,"photoURL":null,"email":"bikash.bhandari05@gmail.com","phoneNumber":null,"providerId":"password"}],"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","appName":"[DEFAULT]","authDomain":"parkit-27a48.firebaseapp.com","stsTokenManager":{"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","refreshToken":"AEu4IL0-EHQCxAzsN6a3TRwChLZpwGNhbO_lZTFuEgnDmaiHwJCYCzimE439z0zDlALGsg2j9h6Ff73CZEibHoF5EsdqnzXqtBg7EcrKUSJXZSMsJvXw7EDRrKiHHDL3ORtZ7qTfTJQgUL5Z2r-k3meo8Ym74Fg_iDJA8mlf2NpUUwNHFRSJFcfyWQO0DCODPUYeROVVenKo4BmntGG-CZDuMvNjqKrF_A","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImU1YTkxZDlmMzlmYTRkZTI1NGExZTg5ZGYwMGYwNWI3ZTI0OGI5ODUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcGFya2l0LTI3YTQ4IiwiYXVkIjoicGFya2l0LTI3YTQ4IiwiYXV0aF90aW1lIjoxNTgwMDQ2MDU5LCJ1c2VyX2lkIjoiMW1CZ2VSejM2bVkwQjRtRzlVdXh3UktXZWozMiIsInN1YiI6IjFtQmdlUnozNm1ZMEI0bUc5VXV4d1JLV2VqMzIiLCJpYXQiOjE1ODAwNDYwNTksImV4cCI6MTU4MDA0OTY1OSwiZW1haWwiOiJiaWthc2guYmhhbmRhcmkwNUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiYmlrYXNoLmJoYW5kYXJpMDVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.V81rlQvkGu5UD2lKJubQIZNG6GZ4yNTI6bXpmu9kr80HsH_Xv3LwOsEqx7c94n73yKVfB-SkJluoCBocceq7lcO5h6pBwBAXOBv9Tw5Z2CMh-kVxIhiFHY7Vp3PbBCX_LnLBL20OuNp_ESNQfMIJ1Dz8MVk8gugg4dMhMD-gYkYfjzisR5L6R1cP_Gu_Gl7voV9P3BwytsVo9_MstPGMKY3fRlHKjRd_61glozq4N0RfmanrmTFItWBCvKyDiSa8qlSd70XVD7bIUPZoc4mMGDa8bhme8PovGjSsklX4BxWYJQCqEt3bv9KnPcTS_kypxQ4P_c-lc2n2-_GyXFZ_oQ","expirationTime":1580049660260},"redirectEventId":null,"lastLoginAt":"1580046059689","createdAt":"1579865628512"},"credential":null,"additionalUserInfo":{"providerId":"password","isNewUser":false},"operationType":"signIn"}
+[debug] [2020-02-02T04:26:30.372Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:26:30.372Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:26:30.376Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:26:30.378Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:26:30.384Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:26:30.384Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:26:30.384Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:26:30.384Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:26:36.185Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:26:36.185Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:26:36.185Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:26:36.185Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:26:36.185Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:26:36.185Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:26:36.188Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:26:36.189Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:26:36.189Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:26:36.189Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:26:36.190Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:26:36.197Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:26:36.197Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:26:36.198Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:26:36.198Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:27:04.820Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:27:04.821Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:27:04.821Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:27:04.821Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:27:04.821Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:27:04.821Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:27:04.822Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:27:04.827Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:27:04.828Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:27:04.828Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:27:04.830Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:27:04.840Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:27:04.840Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:27:04.841Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:27:04.841Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:27:44.646Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:27:44.646Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:27:44.647Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:27:44.647Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:27:44.647Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:27:44.648Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:27:44.651Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:27:44.652Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:27:44.652Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:27:44.652Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:27:44.652Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:27:44.658Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:27:44.658Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:27:44.658Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:27:44.658Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:28:14.427Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:28:14.427Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:28:14.427Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:28:14.430Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:28:14.431Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:28:14.431Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:28:14.433Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:28:14.434Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:28:14.434Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:28:14.434Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:28:14.435Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:28:14.444Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:28:14.445Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:28:14.445Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:28:14.445Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:28:27.088Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:28:27.088Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:28:27.088Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:28:27.088Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:28:27.089Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:28:27.089Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:28:27.089Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:28:27.090Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:28:27.090Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:28:27.094Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:28:27.096Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:28:27.102Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:28:27.102Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:28:27.104Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:28:27.105Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:28:38.840Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:28:38.840Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:28:38.840Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:28:38.840Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:28:38.841Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:28:38.841Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:28:38.846Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:28:38.846Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:28:38.847Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:28:38.847Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:28:38.848Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:28:38.864Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:28:38.864Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:28:38.864Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:28:38.864Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:31:34.101Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:31:34.102Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:31:34.102Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:31:34.102Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:31:34.103Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:31:34.103Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:31:34.106Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:31:34.107Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:31:34.107Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:31:34.108Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:31:34.108Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:31:34.111Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:31:34.112Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:31:34.113Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:31:34.113Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:32:09.441Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:32:09.441Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:32:09.441Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:32:09.441Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:32:09.442Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:32:09.442Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:32:09.445Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:32:09.445Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:32:09.445Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:32:09.445Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:32:09.446Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:32:09.458Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:32:09.460Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:32:09.461Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:32:09.461Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:32:57.633Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:32:57.633Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:32:57.633Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:32:57.633Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:32:57.633Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:32:57.633Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:32:57.637Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:32:57.638Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:32:57.638Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:32:57.638Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:32:57.641Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:32:57.645Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:32:57.646Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:32:57.646Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:32:57.647Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:33:02.425Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:33:02.425Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:33:02.426Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:33:02.426Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:33:02.426Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:33:02.426Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:33:02.432Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:33:02.432Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:33:02.432Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:33:02.433Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:33:02.433Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:33:02.439Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:33:02.442Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:33:02.446Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:33:02.446Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:33:12.430Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:33:12.431Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:33:12.431Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:33:12.431Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:33:12.431Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:33:12.431Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:33:12.435Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:33:12.436Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:33:12.436Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:33:12.436Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:33:12.437Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:33:12.441Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:33:12.441Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:33:12.443Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:33:12.443Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:33:24.848Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:33:24.849Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:33:24.849Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:33:24.849Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:33:24.849Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: Assigning socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:33:24.849Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: BUSY
+[debug] [2020-02-02T04:33:24.851Z] [runtime-status] [3723] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:33:24.851Z] [runtime-status] [3723] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:33:24.851Z] [runtime-status] [3723] Running api in mode HTTPS
+[debug] [2020-02-02T04:33:24.852Z] [runtime-status] [3723] Attempting to listen to socketPath: /tmp/fire_emu_3723.sock
+[debug] [2020-02-02T04:33:24.852Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:33:24.858Z] [runtime-status] [3723] Ephemeral server handling GET request
+[debug] [2020-02-02T04:33:24.858Z] [runtime-status] [3723] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:33:24.863Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: IDLE
+[debug] [2020-02-02T04:33:24.863Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:33:35.974Z] File /home/bikash/Documents/projects/parkIT/functions/index.js changed, reloading triggers
+[debug] [2020-02-02T04:33:36.975Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-02T04:33:36.975Z] [worker-~diagnostic~-abcb7551-72ae-4faf-9c4d-91be4d2d6e11]: FINISHING
+[debug] [2020-02-02T04:33:36.976Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-02T04:33:36.976Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: FINISHING
+[debug] [2020-02-02T04:33:36.986Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-02T04:33:36.986Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-02T04:33:36.986Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-02T04:33:36.986Z] [worker-~diagnostic~-5e1909af-145e-4456-ab44-e7eb06b8d30c]: Assigning socketPath: /tmp/fire_emu_4802.sock
+[debug] [2020-02-02T04:33:36.987Z] [worker-~diagnostic~-5e1909af-145e-4456-ab44-e7eb06b8d30c]: BUSY
+[debug] [2020-02-02T04:33:36.991Z] [worker-~diagnostic~-abcb7551-72ae-4faf-9c4d-91be4d2d6e11]: exited
+[debug] [2020-02-02T04:33:36.991Z] [worker-~diagnostic~-abcb7551-72ae-4faf-9c4d-91be4d2d6e11]: FINISHED
+[debug] [2020-02-02T04:33:36.991Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: exited
+[debug] [2020-02-02T04:33:36.991Z] [worker-api-ad2abc48-0966-49a5-b612-6815a0b729dd]: FINISHED
+[debug] [2020-02-02T04:33:37.357Z] [runtime-status] [4802] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-02T04:33:37.359Z] [runtime-status] [4802] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-02T04:33:37.362Z] [runtime-status] [4802] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-02T04:33:37.364Z] [runtime-status] [4802] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:33:37.365Z] [runtime-status] [4802] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:33:37.918Z] [worker-~diagnostic~-5e1909af-145e-4456-ab44-e7eb06b8d30c]: IDLE
+[debug] [2020-02-02T04:33:43.796Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:33:43.796Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:33:43.796Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:33:43.796Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-02T04:33:43.796Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-02-02T04:33:43.805Z] [worker-pool] addWorker(api)
+[debug] [2020-02-02T04:33:43.805Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-02-02T04:33:43.805Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:33:43.805Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:33:43.805Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:33:44.319Z] [runtime-status] [4822] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-02T04:33:44.321Z] [runtime-status] [4822] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-02T04:33:44.324Z] [runtime-status] [4822] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-02T04:33:44.325Z] [runtime-status] [4822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:33:44.327Z] [runtime-status] [4822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:33:45.007Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:33:45.008Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:33:45.008Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:33:45.013Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:33:45.017Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:33:45.047Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:33:45.058Z] [runtime-status] [4822] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:33:45.059Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:33:45.059Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:33:53.079Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:33:53.079Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:33:53.079Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
+[debug] [2020-02-02T04:33:53.079Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:33:53.079Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:33:53.079Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:33:53.081Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:33:53.082Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:33:53.082Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:33:53.084Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:33:53.085Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:33:53.323Z] [runtime-status] [4822] Ephemeral server handling POST request
+[debug] [2020-02-02T04:33:53.352Z] [runtime-status] [4822] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:33:54.241Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:33:54.241Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:34:04.052Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:34:04.052Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:34:04.053Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
+[debug] [2020-02-02T04:34:04.053Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:04.053Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:04.053Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:34:04.054Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:04.057Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:04.057Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:04.058Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:04.059Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:04.065Z] [runtime-status] [4822] Ephemeral server handling POST request
+[debug] [2020-02-02T04:34:04.072Z] [runtime-status] [4822] Ephemeral server survived.
+[info] >  {"user":{"uid":"1mBgeRz36mY0B4mG9UuxwRKWej32","displayName":null,"photoURL":null,"email":"bikash.bhandari05@gmail.com","emailVerified":false,"phoneNumber":null,"isAnonymous":false,"tenantId":null,"providerData":[{"uid":"bikash.bhandari05@gmail.com","displayName":null,"photoURL":null,"email":"bikash.bhandari05@gmail.com","phoneNumber":null,"providerId":"password"}],"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","appName":"[DEFAULT]","authDomain":"parkit-27a48.firebaseapp.com","stsTokenManager":{"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","refreshToken":"AEu4IL0eqAKPnz3n5KpnDOlKhPD0xM5E86resn0hlhVabNZM-dccpm31GTiekh4w0tbCXWFwToWBOSNPLN9QHijkOrW_BaaIIHHxbF4-JyPswMq4CO94xswwVFdT-B-n6jDrI_2agyiBndbzMboCBHziRhu0bCqfHeYfi2NTEQrw_vX1A7qQEQ6k7QY0_Hy5Pqt6gnm_F3HX6IRrNHTjnmlGOCaOXsiyhg","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1OTc0MmQyNjlhY2IzNWZiNjU3YzBjNGRkMmM3YjcyYWEzMTRiNTAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcGFya2l0LTI3YTQ4IiwiYXVkIjoicGFya2l0LTI3YTQ4IiwiYXV0aF90aW1lIjoxNTgwNjE4MDQ0LCJ1c2VyX2lkIjoiMW1CZ2VSejM2bVkwQjRtRzlVdXh3UktXZWozMiIsInN1YiI6IjFtQmdlUnozNm1ZMEI0bUc5VXV4d1JLV2VqMzIiLCJpYXQiOjE1ODA2MTgwNDQsImV4cCI6MTU4MDYyMTY0NCwiZW1haWwiOiJiaWthc2guYmhhbmRhcmkwNUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiYmlrYXNoLmJoYW5kYXJpMDVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.L7Q45eY6JTJre6abrlRtiSYMvEDJRHH21KBLmFVbmlVGgiijw0SLfm92xPPhc3wu90DU3Trk7hkYis1omWbeWjgW7QTJGRK8-r9exsEpKkrrLldxuPaxXeTEjjpIswmNouFCa_YTiZXBm61doMGp1wjswoRw4Heu8jeGh7kNf4Q4yke1TZz6CoAJIpAJHW112T4hf4sQPj2XQmZHHMYvdFGh9xeRMCDMzYN_Jl0YhO89M3eO9PyYKFvikJ5peci58XdEgp9XufYe9efASRq5K36hAkPAQJLJAnyMt2D9RYLVmeD9kRslE9oBAmQUWQyefST1g_4M1-wEzGO7sHUntA","expirationTime":1580621645092},"redirectEventId":null,"lastLoginAt":"1580618044836","createdAt":"1579865628512"},"credential":null,"additionalUserInfo":{"providerId":"password","isNewUser":false},"operationType":"signIn"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:06.014Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:34:06.015Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:34:06.237Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:34:06.237Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:34:06.238Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:34:06.238Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:06.238Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:06.238Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:34:06.240Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:06.241Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:06.241Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:06.241Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:06.241Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:06.244Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:06.517Z] [runtime-status] [4822] Ephemeral server survived.
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32',
+[info] >    createdAt: '2020-01-24T11:33:49.645Z' }
+[info] i  functions: Finished "api" in ~3s
+[debug] [2020-02-02T04:34:10.118Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:34:10.118Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:34:32.769Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:34:32.770Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:34:32.770Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:34:32.770Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:32.770Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:32.770Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:34:32.778Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:32.778Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:32.779Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:32.779Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:32.779Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:32.796Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:32.796Z] [runtime-status] [4822] Ephemeral server survived.
+[debug] [2020-02-02T04:34:32.937Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-02T04:34:32.937Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-02T04:34:32.937Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:34:32.943Z] [worker-pool] addWorker(api)
+[debug] [2020-02-02T04:34:32.944Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-02-02T04:34:32.944Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:32.944Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: Assigning socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:34:32.944Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: BUSY
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[debug] [2020-02-02T04:34:33.586Z] [runtime-status] [4899] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-02T04:34:33.588Z] [runtime-status] [4899] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-02T04:34:33.591Z] [runtime-status] [4899] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-02T04:34:33.592Z] [runtime-status] [4899] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:34:33.592Z] [runtime-status] [4899] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-02T04:34:34.081Z] [runtime-status] [4899] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:34.081Z] [runtime-status] [4899] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:34.082Z] [runtime-status] [4899] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:34.085Z] [runtime-status] [4899] Attempting to listen to socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:34:34.091Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:34.105Z] [runtime-status] [4899] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:34.114Z] [runtime-status] [4899] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:34.116Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: IDLE
+[debug] [2020-02-02T04:34:34.116Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  success { email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32',
+[info] >    createdAt: '2020-01-24T11:33:49.645Z' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:34.699Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:34:34.699Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:34:40.878Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:34:40.878Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:34:40.878Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:34:40.878Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:40.878Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:40.878Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:34:40.880Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:40.880Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:40.880Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:40.880Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:40.881Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:40.884Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:40.884Z] [runtime-status] [4822] Ephemeral server survived.
+[debug] [2020-02-02T04:34:41.054Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-02T04:34:41.054Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-02T04:34:41.054Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:34:41.054Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:41.054Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: Assigning socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:34:41.054Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: BUSY
+[debug] [2020-02-02T04:34:41.058Z] [runtime-status] [4899] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:41.060Z] [runtime-status] [4899] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:41.060Z] [runtime-status] [4899] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:41.060Z] [runtime-status] [4899] Attempting to listen to socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:34:41.061Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:41.068Z] [runtime-status] [4899] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:41.068Z] [runtime-status] [4899] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:41.068Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: IDLE
+[debug] [2020-02-02T04:34:41.068Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { createdAt: '2020-01-24T11:33:49.645Z',
+[info] >    email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:42.046Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:34:42.046Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:34:45.693Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:34:45.694Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:34:45.694Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:34:45.694Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:45.694Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:45.694Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:34:45.696Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:45.696Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:45.696Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:45.701Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:45.701Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:45.709Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:45.710Z] [runtime-status] [4822] Ephemeral server survived.
+[debug] [2020-02-02T04:34:45.872Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-02T04:34:45.872Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-02T04:34:45.872Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:34:45.873Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:45.873Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: Assigning socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:34:45.873Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: BUSY
+[debug] [2020-02-02T04:34:45.876Z] [runtime-status] [4899] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:45.876Z] [runtime-status] [4899] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:45.876Z] [runtime-status] [4899] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:45.876Z] [runtime-status] [4899] Attempting to listen to socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:34:45.877Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:45.894Z] [runtime-status] [4899] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:45.894Z] [runtime-status] [4899] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:45.894Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: IDLE
+[debug] [2020-02-02T04:34:45.895Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { createdAt: '2020-01-24T11:33:49.645Z',
+[info] >    email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:46.787Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:34:46.788Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:34:50.082Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:34:50.083Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:34:50.083Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:34:50.083Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:50.083Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:50.083Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:34:50.085Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:50.086Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:50.086Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:50.086Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:50.086Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:50.099Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:50.099Z] [runtime-status] [4822] Ephemeral server survived.
+[debug] [2020-02-02T04:34:50.270Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-02T04:34:50.270Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-02T04:34:50.270Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:34:50.270Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:50.270Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: Assigning socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:34:50.270Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: BUSY
+[debug] [2020-02-02T04:34:50.276Z] [runtime-status] [4899] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:50.276Z] [runtime-status] [4899] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:50.276Z] [runtime-status] [4899] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:50.276Z] [runtime-status] [4899] Attempting to listen to socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:34:50.277Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:50.288Z] [runtime-status] [4899] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:50.291Z] [runtime-status] [4899] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:50.291Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: IDLE
+[debug] [2020-02-02T04:34:50.291Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32',
+[info] >    createdAt: '2020-01-24T11:33:49.645Z' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:51.085Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:34:51.085Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:34:54.532Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:34:54.532Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:34:54.532Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:34:54.532Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:54.532Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:54.532Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:34:54.537Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:54.538Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:54.538Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:54.538Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:54.539Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:54.549Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:54.549Z] [runtime-status] [4822] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:54.550Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:34:54.550Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:34:59.652Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:34:59.652Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:34:59.652Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:34:59.652Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:34:59.652Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:59.652Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:34:59.654Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:34:59.654Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:34:59.654Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:34:59.654Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:34:59.655Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:34:59.659Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:34:59.659Z] [runtime-status] [4822] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:34:59.662Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:34:59.662Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:35:28.628Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:35:28.628Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:35:28.628Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
+[debug] [2020-02-02T04:35:28.628Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:35:28.628Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:35:28.628Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:35:28.631Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:35:28.632Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:35:28.632Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:35:28.632Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:35:28.632Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:35:28.643Z] [runtime-status] [4822] Ephemeral server handling POST request
+[debug] [2020-02-02T04:35:28.643Z] [runtime-status] [4822] Ephemeral server survived.
+[info] >  {"user":{"uid":"1mBgeRz36mY0B4mG9UuxwRKWej32","displayName":null,"photoURL":null,"email":"bikash.bhandari05@gmail.com","emailVerified":false,"phoneNumber":null,"isAnonymous":false,"tenantId":null,"providerData":[{"uid":"bikash.bhandari05@gmail.com","displayName":null,"photoURL":null,"email":"bikash.bhandari05@gmail.com","phoneNumber":null,"providerId":"password"}],"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","appName":"[DEFAULT]","authDomain":"parkit-27a48.firebaseapp.com","stsTokenManager":{"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","refreshToken":"AEu4IL2tY0tYTujRcaokxMaZlclu1VqPRihg81ur96cp_P1tSja9cLN_NGqS05-3__vsEf3-_DRJmUY03Xl5F8P_QJg10GKqckESooUaz7qD3QFlI0ZSrJfY_EFGPT6aXe5VQdYQl8O_w3BV9waGz1L2USwpdF0qk8k97nMvgK6FWqXcxwtfpO4Xh9Wcsum18VbNyjkjUPuP1j7kdQ1HS7cUMixVgNbfqg","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1OTc0MmQyNjlhY2IzNWZiNjU3YzBjNGRkMmM3YjcyYWEzMTRiNTAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcGFya2l0LTI3YTQ4IiwiYXVkIjoicGFya2l0LTI3YTQ4IiwiYXV0aF90aW1lIjoxNTgwNjE4MTI5LCJ1c2VyX2lkIjoiMW1CZ2VSejM2bVkwQjRtRzlVdXh3UktXZWozMiIsInN1YiI6IjFtQmdlUnozNm1ZMEI0bUc5VXV4d1JLV2VqMzIiLCJpYXQiOjE1ODA2MTgxMjksImV4cCI6MTU4MDYyMTcyOSwiZW1haWwiOiJiaWthc2guYmhhbmRhcmkwNUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiYmlrYXNoLmJoYW5kYXJpMDVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GB2DpF96YDla1gUepewf5KdKSdfUFzag0XiOn_OpyDRI8oeANtiSvoNxqJrQCpH3qD-WXw2Y-_-7mAigIjs9eO8Vsdaa3EfOZm4lbtHPH-5eajyk1Inc-XlCuP3aObZ8HFC0BDgwEbhrOxsv7luOpmNH0BhsyCvKzSxhn-UGb9ceVStZLTeD6wSga7WqpGhi6i3AjOZTky7D0URsngLYH2jQGl0hl-9Lt2Rw9Fg4FGzti1r24M-utdyeuS-Lk26geBkVh-ERHtV2juIsqTtgjuvGpifG5i94GPf3lePBwejWIvqHwfXRQ2NIhErbhuM_25IgMOcB0EVOG1Xltm4Hgw","expirationTime":1580621729692},"redirectEventId":null,"lastLoginAt":"1580618044836","createdAt":"1579865628512"},"credential":null,"additionalUserInfo":{"providerId":"password","isNewUser":false},"operationType":"signIn"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:35:30.516Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:35:30.516Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:35:30.667Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:35:30.667Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:35:30.667Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:35:30.667Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:35:30.667Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:35:30.667Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:35:30.679Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:35:30.680Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:35:30.680Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:35:30.680Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:35:30.681Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:35:30.691Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:35:30.691Z] [runtime-status] [4822] Ephemeral server survived.
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { createdAt: '2020-01-24T11:33:49.645Z',
+[info] >    email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:35:31.748Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:35:31.748Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:35:44.381Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:35:44.381Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:35:44.381Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:35:44.381Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:35:44.382Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:35:44.382Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:35:44.384Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:35:44.385Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:35:44.385Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:35:44.385Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:35:44.386Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:35:44.391Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:35:44.391Z] [runtime-status] [4822] Ephemeral server survived.
+[debug] [2020-02-02T04:35:44.618Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-02T04:35:44.619Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-02T04:35:44.619Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:35:44.619Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:35:44.619Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: Assigning socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:35:44.619Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: BUSY
+[debug] [2020-02-02T04:35:44.624Z] [runtime-status] [4899] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:35:44.624Z] [runtime-status] [4899] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:35:44.624Z] [runtime-status] [4899] Running api in mode HTTPS
+[debug] [2020-02-02T04:35:44.624Z] [runtime-status] [4899] Attempting to listen to socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:35:44.624Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:35:44.630Z] [runtime-status] [4899] Ephemeral server handling GET request
+[debug] [2020-02-02T04:35:44.631Z] [runtime-status] [4899] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:35:44.632Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: IDLE
+[debug] [2020-02-02T04:35:44.632Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32',
+[info] >    createdAt: '2020-01-24T11:33:49.645Z' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:35:45.478Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:35:45.478Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:36:23.339Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:36:23.339Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:36:23.339Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:36:23.339Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:36:23.339Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:36:23.339Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:36:23.341Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:36:23.341Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:36:23.341Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:36:23.341Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:36:23.342Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:36:23.346Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:36:23.353Z] [runtime-status] [4822] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:36:23.353Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:36:23.353Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:36:39.037Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:36:39.038Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:36:39.038Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:36:39.038Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:36:39.038Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:36:39.038Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:36:39.040Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:36:39.041Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:36:39.041Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:36:39.041Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:36:39.042Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:36:39.048Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:36:39.049Z] [runtime-status] [4822] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:36:39.050Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:36:39.050Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:36:48.219Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:36:48.219Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:36:48.220Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
+[debug] [2020-02-02T04:36:48.220Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:36:48.220Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:36:48.220Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:36:48.228Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:36:48.229Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:36:48.229Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:36:48.229Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:36:48.232Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:36:48.240Z] [runtime-status] [4822] Ephemeral server handling POST request
+[debug] [2020-02-02T04:36:48.240Z] [runtime-status] [4822] Ephemeral server survived.
+[info] >  {"user":{"uid":"1mBgeRz36mY0B4mG9UuxwRKWej32","displayName":null,"photoURL":null,"email":"bikash.bhandari05@gmail.com","emailVerified":false,"phoneNumber":null,"isAnonymous":false,"tenantId":null,"providerData":[{"uid":"bikash.bhandari05@gmail.com","displayName":null,"photoURL":null,"email":"bikash.bhandari05@gmail.com","phoneNumber":null,"providerId":"password"}],"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","appName":"[DEFAULT]","authDomain":"parkit-27a48.firebaseapp.com","stsTokenManager":{"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","refreshToken":"AEu4IL2W8e4vg-lnadvOEDEv7DcIxHrxO2EbVYX2E2j9Rjf9fRooLdUMGEEokDvOh3G2nJp0kLyWankx4UAd1y-eBSkvo-SP9_YteYVowI4XUNnXq8SpeVTm4hLdTO1d3LDqJefo_pxIBsn-T8cOMDBK3HGMaaFFnklrITmXrsgeU_DNtj2ytpTRO4RguF3usJM_5xCF6LPYEGAB7k8Lz8yp5asSPn1OuQ","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1OTc0MmQyNjlhY2IzNWZiNjU3YzBjNGRkMmM3YjcyYWEzMTRiNTAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcGFya2l0LTI3YTQ4IiwiYXVkIjoicGFya2l0LTI3YTQ4IiwiYXV0aF90aW1lIjoxNTgwNjE4MjA4LCJ1c2VyX2lkIjoiMW1CZ2VSejM2bVkwQjRtRzlVdXh3UktXZWozMiIsInN1YiI6IjFtQmdlUnozNm1ZMEI0bUc5VXV4d1JLV2VqMzIiLCJpYXQiOjE1ODA2MTgyMDgsImV4cCI6MTU4MDYyMTgwOCwiZW1haWwiOiJiaWthc2guYmhhbmRhcmkwNUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiYmlrYXNoLmJoYW5kYXJpMDVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.kIdbbyzNXSELZoZwQn31eTXnDxc8vGTF3hbjBuIC7AJ6u6gcufomfrjBS6aiDZ0hpKHeS1XhhJu8X8ir487QRzc81Z7li75ps-laflCer44UCAVIBSVcpXIpdoontOZo_ubKWuPsC_cWdRbxfZoTdV5nlXQCnXyJYoqqUtLSI8YGhioRkzVIFrIvvnHTiJ_fB1LglBNX7OkhBpbvjFhJTly0-YiUHKhVI3tFcJpMnqAKoyGhZXxns7M6eE5xHSA9KszL27t1OlX8Yx7xk8nGnr5fnJrNgr2ZCxy-Z_2_KFGr7m3FO-IEdDgsi4BvptwbVGQ5e3_aHqOtwX39xr3r6A","expirationTime":1580621809078},"redirectEventId":null,"lastLoginAt":"1580618208826","createdAt":"1579865628512"},"credential":null,"additionalUserInfo":{"providerId":"password","isNewUser":false},"operationType":"signIn"}
 [info] i  functions: Finished "api" in ~2s
-[debug] [2020-01-26T13:41:01.057Z] [worker-api-0ec67422-0c4d-430b-b2c2-956527ed8095]: IDLE
-[debug] [2020-01-26T13:41:01.057Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:36:50.621Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:36:50.621Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:36:50.781Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:36:50.781Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:36:50.781Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:36:50.781Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:36:50.781Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:36:50.782Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:36:50.784Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:36:50.784Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:36:50.784Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:36:50.784Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:36:50.785Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:36:50.788Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:36:50.788Z] [runtime-status] [4822] Ephemeral server survived.
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32',
+[info] >    createdAt: '2020-01-24T11:33:49.645Z' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:36:51.854Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:36:51.854Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:37:14.002Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:37:14.002Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:37:14.003Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:37:14.003Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:37:14.003Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:37:14.003Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:37:14.005Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:37:14.006Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:37:14.006Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:37:14.006Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:37:14.034Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:37:14.052Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:37:14.052Z] [runtime-status] [4822] Ephemeral server survived.
+[debug] [2020-02-02T04:37:14.336Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-02T04:37:14.336Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-02T04:37:14.336Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:37:14.336Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:37:14.336Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: Assigning socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:37:14.336Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: BUSY
+[debug] [2020-02-02T04:37:14.340Z] [runtime-status] [4899] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:37:14.341Z] [runtime-status] [4899] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:37:14.341Z] [runtime-status] [4899] Running api in mode HTTPS
+[debug] [2020-02-02T04:37:14.341Z] [runtime-status] [4899] Attempting to listen to socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:37:14.342Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:37:14.351Z] [runtime-status] [4899] Ephemeral server handling GET request
+[debug] [2020-02-02T04:37:14.351Z] [runtime-status] [4899] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:37:14.351Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: IDLE
+[debug] [2020-02-02T04:37:14.352Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32',
+[info] >    createdAt: '2020-01-24T11:33:49.645Z' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:37:15.190Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:37:15.190Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-02T04:37:32.391Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-02T04:37:32.392Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-02T04:37:32.392Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-02T04:37:32.392Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:37:32.392Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: Assigning socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:37:32.392Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: BUSY
+[debug] [2020-02-02T04:37:32.394Z] [runtime-status] [4822] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:37:32.399Z] [runtime-status] [4822] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:37:32.399Z] [runtime-status] [4822] Running api in mode HTTPS
+[debug] [2020-02-02T04:37:32.400Z] [runtime-status] [4822] Attempting to listen to socketPath: /tmp/fire_emu_4822.sock
+[debug] [2020-02-02T04:37:32.400Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:37:32.404Z] [runtime-status] [4822] Ephemeral server handling GET request
+[debug] [2020-02-02T04:37:32.404Z] [runtime-status] [4822] Ephemeral server survived.
+[debug] [2020-02-02T04:37:32.585Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-02T04:37:32.586Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-02T04:37:32.586Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-02T04:37:32.586Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-02T04:37:32.586Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: Assigning socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:37:32.586Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: BUSY
+[debug] [2020-02-02T04:37:32.589Z] [runtime-status] [4899] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-02T04:37:32.589Z] [runtime-status] [4899] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-02T04:37:32.590Z] [runtime-status] [4899] Running api in mode HTTPS
+[debug] [2020-02-02T04:37:32.590Z] [runtime-status] [4899] Attempting to listen to socketPath: /tmp/fire_emu_4899.sock
+[debug] [2020-02-02T04:37:32.591Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-02T04:37:32.597Z] [runtime-status] [4899] Ephemeral server handling GET request
+[debug] [2020-02-02T04:37:32.597Z] [runtime-status] [4899] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:37:32.597Z] [worker-api-ad03b661-c0e1-4372-a7a3-d53d2d763eb1]: IDLE
+[debug] [2020-02-02T04:37:32.597Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  userID 1mBgeRz36mY0B4mG9UuxwRKWej32
+[info] >  success { email: 'bikash.bhandari05@gmail.com',
+[info] >    userId: '1mBgeRz36mY0B4mG9UuxwRKWej32',
+[info] >    createdAt: '2020-01-24T11:33:49.645Z' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-02T04:37:33.376Z] [worker-api-d69e99ac-ec92-4def-90a3-ee1bda95419e]: IDLE
+[debug] [2020-02-02T04:37:33.376Z] [work-queue] {"queueLength":0,"workRunningCount":0}

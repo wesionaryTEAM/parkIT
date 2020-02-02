@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "parkit-27a48",
+  "private_key_id": "0659f73dc150976f0b0a144ad42eb0463a6a5075",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC6EQiuyezVdyCY\nysWEaQs0U8Lo/O5CgQMzEj9/mQSGZhY/ERO4jQUGjk7Rai41+kB6awOAfdPj8cO+\njyRUgRBRE6IuKjxSzsh+6XqfABI5xNsTKCOzMIPpAiSXC9AMXbjXr0IYABZvh96h\nfnt+D5JL29UiDGJVlhwY3l92Eop2OGfTirzha8PGpX46TbSIX5oZUc51N1vkBMGt\n60pQvq/opZ+mTOU0GR2b43tbRR9Ij+n9a5xFlb39CGDAubwrq9qOhxDqEdD6PyEc\nmMWdtTCUxYWJ0ARhK1VP+j7GrzpOF6H4JxG6KOKmfYX/B1Rxhc0BCO/APWBPZApP\n3vk+vgwTAgMBAAECggEAMKDTDBtp8kA4HLah+IEblIlvn0S7YFYnZ+mU/twW+qkj\nl0f3R3xTm+sFXmXJvgGxaE0flS1Ne31sExmF/S/d+9KNyFLxgRLaA5Exoux51u9D\n8jXDXsmHMBaHSZKkxRaZgIUlWPBs7Kkt3jcYP1ICgiDqCwQBjyy0GyvC9zDRTyPs\nmQV4EeH3CgT/z5ZOJoz1h2m7rXy+zg/nuhB6rqNoFkKsBZiYjAZiDx1X20iHYemv\nKMtQ0gwyuQhCmd8fzLmGlvCcUuxMD5kpDhKANsyjXKF0jafh7VMTdQQxzQpfrxeZ\nfqYq3FlLesmk2ABrGJ/f4A+nDyg14HJPPc5wCanxwQKBgQDh2d3LaeMXc3W0Lhec\nZC8QVPfVHWjUxWFPAOUcxAht9yZ9GPzIsmlLB+JM9e3OrqvC9zt2dGz4Qe4VfmQN\nX2gIDUU8kkEYThhyNnR1aAI/rIBFmQ4icYxtv768Hm06VtDfMHLOb/q90kb/oqAF\nE9v0QDWmB/wAluQFfi+Z++9GlwKBgQDS55btDXHSSeteIHJkPC0/sAkZKQxmrJZy\npXz1uTh9GxDbZ1cS/dEXfO+9ReNpUNFdJwhtHs4RGf83f4dmKUVTwOFoMtvbSiUe\neDQfSTxqIfNyLFtMJ/ut7dx4PHZrrUXqQ7Qe5x0q3bO4b7H+wolQ7B3puPvUDYMD\nQ0+/g3cx5QKBgGdRwLpWtXG7+yOzVk/QMQuao0nWS2fS6AI5WZbAQ07zGqNt8+5o\nV+zgLXGhq+m6VI87hPNaraMgnictC95mP/Q3Be6AxdC1oU9WhA5Vx3mTk5bDPwkY\nwvJOHpZ2oOdoYeNIiazQ43dFI/+8SNIp1Jy3ZxOOYYVvgd7VbDdYXoz/AoGAXwzA\nmFVW1s85pFI7O7FjMzDC6PP3As8FfuXWS2gObVOlZTxNoeGCOnO0GDlHJE+oC7Nr\nuMIJXOu6eeifvQsck4J6E9vX+hyQXgsOcosvDyX98ZbMDqZ2ZwysMAQP2rdcqxeY\nNdUy7/664IR2U7qY6D+Bu7QCyq7MPMw5RLabIYECgYB8hQTs7cNNkKoGC4H+WRtv\nqV0d0SIsxXMLWVOzHbYveX7nhtR5l17/hMZaVnOh+hEEkVxoME7zs7kjWyMK7vyo\nKGgC91NTsN1ewVYoVV74fYUWVUHpQJGBRfGC9k2miuhePkI2iexprH6qqVSXOpZp\nAWYTv/3uJp+GoC51VuGfMg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "parkit@parkit-27a48.iam.gserviceaccount.com",
+  "client_id": "114957037388246740460",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/parkit%40parkit-27a48.iam.gserviceaccount.com"
+}

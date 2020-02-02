@@ -62,6 +62,7 @@ interface StyledButtonProps {
 
 
 export const ButtonComponent: React.SFC<StyledButtonProps> = props => {
+    
     const buttonStyles = useStyles();
     let buttonClasses = `${
         props.primary ? buttonStyles.primary : buttonStyles.secondary
