@@ -1,85 +1,29 @@
-[debug] [2020-02-02T09:55:57.364Z] ----------------------------------------------------------------------
-[debug] [2020-02-02T09:55:57.367Z] Command:       /home/bikash/.nvm/versions/node/v10.15.3/bin/node /home/bikash/.nvm/versions/node/v10.15.3/bin/firebase serve
-[debug] [2020-02-02T09:55:57.367Z] CLI Version:   7.12.1
-[debug] [2020-02-02T09:55:57.367Z] Platform:      linux
-[debug] [2020-02-02T09:55:57.367Z] Node Version:  v10.15.3
-[debug] [2020-02-02T09:55:57.367Z] Time:          Sun Feb 02 2020 15:40:57 GMT+0545 (Nepal Time)
-[debug] [2020-02-02T09:55:57.367Z] ----------------------------------------------------------------------
-[debug] [2020-02-02T09:55:57.367Z] 
-[debug] [2020-02-02T09:55:57.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-02-02T09:55:57.377Z] > authorizing via signed-in user
-[debug] [2020-02-02T09:55:57.377Z] [iam] checking project parkit-27a48 for permissions ["firebase.projects.get"]
-[debug] [2020-02-02T09:55:57.378Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-02-02T09:55:57.378Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-02-02T09:55:58.106Z] <<< HTTP RESPONSE 200
-[debug] [2020-02-02T09:55:58.158Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parkit-27a48:testIamPermissions  
+[debug] [2020-02-03T06:05:02.316Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T06:05:02.318Z] Command:       /home/bikash/.nvm/versions/node/v10.15.3/bin/node /home/bikash/.nvm/versions/node/v10.15.3/bin/firebase login
+[debug] [2020-02-03T06:05:02.318Z] CLI Version:   7.12.1
+[debug] [2020-02-03T06:05:02.318Z] Platform:      linux
+[debug] [2020-02-03T06:05:02.318Z] Node Version:  v10.15.3
+[debug] [2020-02-03T06:05:02.319Z] Time:          Mon Feb 03 2020 11:50:02 GMT+0545 (Nepal Time)
+[debug] [2020-02-03T06:05:02.319Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T06:05:02.319Z] 
+[info] Already logged in as bikash.bhandari@tech-commit.com
+[debug] [2020-02-03T06:05:26.966Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T06:05:26.967Z] Command:       /home/bikash/.nvm/versions/node/v10.15.3/bin/node /home/bikash/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2020-02-03T06:05:26.968Z] CLI Version:   7.12.1
+[debug] [2020-02-03T06:05:26.968Z] Platform:      linux
+[debug] [2020-02-03T06:05:26.968Z] Node Version:  v10.15.3
+[debug] [2020-02-03T06:05:26.968Z] Time:          Mon Feb 03 2020 11:50:26 GMT+0545 (Nepal Time)
+[debug] [2020-02-03T06:05:26.968Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T06:05:26.968Z] 
+[debug] [2020-02-03T06:05:26.974Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-03T06:05:26.974Z] > authorizing via signed-in user
+[debug] [2020-02-03T06:05:26.974Z] [iam] checking project parkit-27a48 for permissions ["firebase.projects.get"]
+[debug] [2020-02-03T06:05:26.976Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parkit-27a48:testIamPermissions  
 
-[debug] [2020-02-02T09:56:00.380Z] <<< HTTP RESPONSE 200
-[debug] [2020-02-02T09:56:00.384Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/parkit-27a48  
+[debug] [2020-02-03T06:05:47.010Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+[debug] [2020-02-03T06:05:47.013Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/parkit-27a48  
  
-[debug] [2020-02-02T09:56:01.888Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/home/bikash/Documents/projects/parkIT'...
-[info] 
-[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
-[info] ✔  functions: Emulator started at http://localhost:5000
-[info] i  functions: Watching "/home/bikash/Documents/projects/parkIT/functions" for Cloud Functions...
-[debug] [2020-02-02T09:56:02.188Z] [worker-pool] addWorker(~diagnostic~)
-[debug] [2020-02-02T09:56:02.188Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
-[debug] [2020-02-02T09:56:02.188Z] [worker-pool] submitWork(triggerId=)
-[debug] [2020-02-02T09:56:02.189Z] [worker-~diagnostic~-c7e12456-192e-42dc-8553-b123ceafa3a8]: Assigning socketPath: /tmp/fire_emu_14726.sock
-[debug] [2020-02-02T09:56:02.189Z] [worker-~diagnostic~-c7e12456-192e-42dc-8553-b123ceafa3a8]: BUSY
-[debug] [2020-02-02T09:56:02.503Z] [runtime-status] [14726] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-02T09:56:02.505Z] [runtime-status] [14726] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-02-02T09:56:02.508Z] [runtime-status] [14726] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-02T09:56:02.509Z] [runtime-status] [14726] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-02T09:56:02.511Z] [runtime-status] [14726] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[info] ✔  functions[api]: http function initialized (http://localhost:5000/parkit-27a48/us-central1/api).
-[debug] [2020-02-02T09:56:02.969Z] [worker-~diagnostic~-c7e12456-192e-42dc-8553-b123ceafa3a8]: IDLE
-[debug] [2020-02-02T09:56:10.787Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-02-02T09:56:10.788Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-02-02T09:56:10.788Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-02T09:56:10.792Z] [worker-pool] addWorker(api)
-[debug] [2020-02-02T09:56:10.792Z] [worker-pool] Adding worker with key api, total=1
-[debug] [2020-02-02T09:56:10.792Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-02-02T09:56:10.793Z] [worker-api-e1a78abc-9b70-4f56-97c3-676dcf1686dc]: Assigning socketPath: /tmp/fire_emu_14753.sock
-[debug] [2020-02-02T09:56:10.793Z] [worker-api-e1a78abc-9b70-4f56-97c3-676dcf1686dc]: BUSY
-[debug] [2020-02-02T09:56:11.119Z] [runtime-status] [14753] Functions runtime initialized. {"cwd":"/home/bikash/Documents/projects/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-02T09:56:11.121Z] [runtime-status] [14753] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
-[debug] [2020-02-02T09:56:11.124Z] [runtime-status] [14753] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-02T09:56:11.125Z] [runtime-status] [14753] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-02T09:56:11.126Z] [runtime-status] [14753] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/bikash/Documents/projects/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-02T09:56:11.603Z] [runtime-status] [14753] Trigger "api" has been found, beginning invocation!
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-02T09:56:11.603Z] [runtime-status] [14753] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-02T09:56:11.604Z] [runtime-status] [14753] Running api in mode HTTPS
-[debug] [2020-02-02T09:56:11.609Z] [runtime-status] [14753] Attempting to listen to socketPath: /tmp/fire_emu_14753.sock
-[debug] [2020-02-02T09:56:11.617Z] [functions] Runtime ready! Sending request!
-[debug] [2020-02-02T09:56:11.627Z] [runtime-status] [14753] Ephemeral server handling GET request
-[debug] [2020-02-02T09:56:11.665Z] [runtime-status] [14753] Ephemeral server survived.
-[info] >  token verify error
-[info] i  functions: Finished "api" in ~2s
-[debug] [2020-02-02T09:56:13.928Z] [worker-api-e1a78abc-9b70-4f56-97c3-676dcf1686dc]: IDLE
-[debug] [2020-02-02T09:56:13.929Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-02-02T09:58:08.385Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-02-02T09:58:08.385Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-02-02T09:58:08.385Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-02T09:58:08.385Z] [worker-pool] submitWork(triggerId=api)
-[debug] [2020-02-02T09:58:08.386Z] [worker-api-e1a78abc-9b70-4f56-97c3-676dcf1686dc]: Assigning socketPath: /tmp/fire_emu_14753.sock
-[debug] [2020-02-02T09:58:08.386Z] [worker-api-e1a78abc-9b70-4f56-97c3-676dcf1686dc]: BUSY
-[debug] [2020-02-02T09:58:08.388Z] [runtime-status] [14753] Trigger "api" has been found, beginning invocation!
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-02T09:58:08.389Z] [runtime-status] [14753] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-02T09:58:08.389Z] [runtime-status] [14753] Running api in mode HTTPS
-[debug] [2020-02-02T09:58:08.389Z] [runtime-status] [14753] Attempting to listen to socketPath: /tmp/fire_emu_14753.sock
-[debug] [2020-02-02T09:58:08.391Z] [functions] Runtime ready! Sending request!
-[debug] [2020-02-02T09:58:08.398Z] [runtime-status] [14753] Ephemeral server handling GET request
-[debug] [2020-02-02T09:58:08.398Z] [runtime-status] [14753] Ephemeral server survived.
-[info] >  userID D4hCBB4RcAdTjawNCQ0K4ItED563
-[info] >  success { createdAt: '2020-01-30T10:29:44.898Z',
-[info] >    email: 'padam12@gmail.com',
-[info] >    userId: 'D4hCBB4RcAdTjawNCQ0K4ItED563' }
-[info] i  functions: Finished "api" in ~2s
-[debug] [2020-02-02T09:58:10.929Z] [worker-api-e1a78abc-9b70-4f56-97c3-676dcf1686dc]: IDLE
-[debug] [2020-02-02T09:58:10.929Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-03T06:06:27.056Z] Error: getaddrinfo ENOTFOUND firebase.googleapis.com firebase.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com firebase.googleapis.com:443
