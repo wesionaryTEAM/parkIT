@@ -1,38 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Login } from './components/index'
-import { Register } from './components/index'
-import { Provider } from 'react-redux'
-import configureStore from './store'
+import { Login, Register } from './components/index'
 import Index from './components/pages/home'
+import GuestRoute from './utils/GuestRoute'
+import PrivateRoute from './utils/PrivateRoute'
+
+//redux stuff
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import { CheckAuthentication } from './utils/CheckAuthentication'
 import ProfileAdd from './components/pages/Profile/ProfileAdd';
  
+
 const App: React.FC = () => {
+  useEffect(() => {
+    CheckAuthentication();
+
+  }, []);
+
   return (
     <div className="App">
-      <Provider store={configureStore()}>
+      <Provider store={store}>
         <Router>
           <Switch>
-            <Route
+            <PrivateRoute
               exact
-              path='/'
-              component={Login}>
-            </Route>
-
-            <Route
-              exact
-              path="/index"
+              path="/"
               component={Index} />
 
-            <Route exact
-              path="/register"
-              component={Register}>
-            </Route>
+            <GuestRoute
+              exact
+              path='/login'
+              component={Login} />
+            <GuestRoute
+              exact
+              path='/register'
+              component={Register} />
             <Route
             exact
             path="/profile_add"
             component={ProfileAdd} />
+
           </Switch>
         </Router>
       </Provider>

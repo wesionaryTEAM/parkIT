@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -13,8 +13,10 @@ import { ButtonComponent } from '../Layouts/ButtonComponent';
 import { Link, useHistory, useLocation } from 'react-router-dom'
 import { userDataProps } from '../../interface/UserInterface'
 import validator from "validator";
-import axios from 'axios'
 import backgroundImage from '../../assests/images/carpark.png'
+//redux stuff
+import { connect } from 'react-redux';
+import { loginUser } from '../../redux/actions/userActions'
 
 const useStyles = makeStyles(theme => ({
     container: {
@@ -80,11 +82,9 @@ interface formError extends userDataProps {
     message: string;
 }
 
-function Login(props: userDataProps) {
+function Login(props: any) {
 
     const classes = useStyles();
-    const history = useHistory();
-    const location = useLocation();
     const [values, setValues] = useState({
         email: "",
         password: ""
@@ -92,35 +92,34 @@ function Login(props: userDataProps) {
     const [errors, setErrors] = useState({} as formError);
     const [loading, setLoading] = useState(false);
 
+
+    useEffect(() => {
+        if (props.UI.errors) {
+            setErrors(props.UI.errors);
+
+
+        }
+        setLoading(props.UI.loading);
+
+
+
+    }, [props.UI])
+
+
     const handleSubmit = (e: any) => {
         e.preventDefault();
         setLoading(true);
 
         if (!validateForm()) {
             setLoading(false);
-            history.push("/index");
             return;
         }
-
         const userData = {
             email: values.email,
             password: values.password,
 
-        }
-        // TODO firebase method call signInWithEmailAndPassword(email,password)
-        // axios.post('login', userData)
-        //     .then((res) => {
-        //         console.log(res.data);
-        //         localStorage.setItem('token', `Bearer ${res.data.token}`);
-        //         setLoading(false);
-        //         history.push('/');
-
-        //     })
-        //     .catch((err) => {
-        //         console.log(err);
-        //         setErrors(err.response.data);
-        //         setLoading(false);
-        //     });
+        };
+        props.loginUser(userData, props.history);
     }
 
     const handleChange = (e: any) => {
@@ -143,7 +142,6 @@ function Login(props: userDataProps) {
         }
 
         handleErrors(errors);
-
         return Object.keys(errors).length === 0;
     };
 
@@ -255,4 +253,16 @@ function Login(props: userDataProps) {
         </Box>
     )
 }
-export default Login;
+
+//component ma state ma vako data dinxa
+const mapStateToProps = (state: any) => ({
+    user: state.user,
+    UI: state.UI
+
+});
+
+//component ma actions function haru provide garxa
+const mapActionsToProps = {
+    loginUser
+};
+export default connect(mapStateToProps, mapActionsToProps)(Login)

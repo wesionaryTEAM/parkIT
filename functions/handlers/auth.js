@@ -84,52 +84,58 @@ exports.signIn = (req, res) => {
 }
 
 
-exports.isAuthenticated = (req, res, next) => {
-    var user = firebase.auth().currentUser;
-    if (user !== null) {
-        req.user = user;
-        next();
-    } else {
-        res.redirect('/login');
-    }
-}
+//get owner details
+exports.getAuthenticatedUser = (req, res) => {
+    let userData = {};
+    //fetching single data
+    db.collection('users').doc(req.user.userId).get()
+        .then(doc => {
+            if (doc.exists)//checking if document exist or not
+            {
+                console.log('success',doc.data());
+                userData.credentials = doc.data();
+                return res.status(200).json(userData);
 
 
+            }
 
-
-
-exports.signOut = (req, res) => {
-    console.log('CurrentUser', firebase.auth().currentUser);
-    firebase.auth().signOut().then(function () {
-        return res.status(200).json({ message: 'Logout successful!' });
-    }).catch(function (err) {
-        return res.status(500).json({ error: err.message });
-
-    });
-
+        })
+        .catch(err => {
+            console.log('errorsasas',err.message);
+            return res.json({ error: err.message })
+        })
 
 }
+
+
+
+
+
+
+
+
+
 
 
 exports.resetPassword = (req, res) => {
 
 
     const actionCodeSettings = {
-        
+
         url: 'https://www.example.com/pagehere',
         // This must be true for email link sign-in.
         handleCodeInApp: true,
         iOS: {
-          bundleId: 'com.example.ios'
+            bundleId: 'com.example.ios'
         },
         android: {
-          packageName: 'com.example.android',
-          installApp: true,
-          minimumVersion: '12'
+            packageName: 'com.example.android',
+            installApp: true,
+            minimumVersion: '12'
         },
         // FDL custom domain.
         dynamicLinkDomain: 'coolapp.page.link'
-      };
+    };
 
     const userEmail = req.body.email;
     admin.auth().generatePasswordResetLink(userEmail, actionCodeSettings)

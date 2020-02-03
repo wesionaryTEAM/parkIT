@@ -4,7 +4,7 @@ const app = require('express')();//initializaing the app
 const firebaseConfig = require('./utils/config')
 const firebase = require('firebase');
 firebase.initializeApp(firebaseConfig);// Initializing Firebase
-const { signIn,signUp,signOut,resetPassword } = require('./handlers/auth');
+const { signIn,signUp,getAuthenticatedUser,resetPassword } = require('./handlers/auth');
 const authMiddleware = (req, res, next) => {
     let idToken;
     if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
@@ -22,6 +22,7 @@ const authMiddleware = (req, res, next) => {
                 .get();
         }).then(data => {
             req.user.userId = data.docs[0].data().userId;
+            console.log("userID",req.user.userId)
             return next();
 
         }).catch(err => {
@@ -33,8 +34,8 @@ const authMiddleware = (req, res, next) => {
 
 app.post('/register',signUp);
 app.post('/login',signIn);
-app.get('/logout',authMiddleware,signOut);
 app.post('/forgot-password',resetPassword);
+app.get('/user', authMiddleware, getAuthenticatedUser);
 
 
 

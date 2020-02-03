@@ -35,9 +35,11 @@ import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 import HelpIcon from '@material-ui/icons/Help';
 import GavelIcon from '@material-ui/icons/Gavel';
+//redux stuff
+import { connect } from 'react-redux';
+import { logoutUser } from '../../../redux/actions/userActions'
 import { useHistory } from 'react-router';
 const drawerWidth = 240;
-
 const useStyles = makeStyles(theme => ({
     root: {
         display: 'flex',
@@ -162,6 +164,12 @@ function ResponsiveDrawer(props: any) {
         setMobileMoreAnchorEl(event.currentTarget);
     };
 
+    const handleLogout=()=>{
+        props.logoutUser();
+
+
+    }
+
     const menuId = 'primary-search-account-menu';
     // AppBar Dropdown Menu
     const renderMenu = (
@@ -175,7 +183,7 @@ function ResponsiveDrawer(props: any) {
             onClose={handleMenuClose}>
             <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
             <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
+            <MenuItem onClick={handleLogout}>Logout</MenuItem>
         </Menu>
     );
 
@@ -395,5 +403,13 @@ function ResponsiveDrawer(props: any) {
     );
 }
 
+const mapSateToProps=()=>{
 
-export default ResponsiveDrawer;
+}
+
+const mapActionsToProps = {
+    logoutUser
+};
+
+
+export default connect(mapSateToProps,mapActionsToProps)(ResponsiveDrawer)
