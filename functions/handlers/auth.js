@@ -3,6 +3,8 @@ const { validateSignUPData, validateLoginData } = require('../utils/helper')
 
 exports.signUp = (req, res) => {
     const newUser = {
+        firstname:req.body.firstname,
+        lastname:req.body.lastname,
         email: req.body.email,
         password: req.body.password,
         confirmPassword: req.body.confirmPassword,
@@ -142,7 +144,7 @@ exports.resetPassword = (req, res) => {
         .then((link) => {
             // Construct password reset email template, embed the link and send
             // using custom SMTP server.
-            return sendCustomPasswordResetEmail(email, displayName, link);
+            // return sendCustomPasswordResetEmail(email, displayName, link);
         })
         .catch((error) => {
             // Some error occurred.

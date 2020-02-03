@@ -83,3 +83,16 @@
 [info] i  functions: Finished "api" in ~2s
 [debug] [2020-02-02T09:58:10.929Z] [worker-api-e1a78abc-9b70-4f56-97c3-676dcf1686dc]: IDLE
 [debug] [2020-02-02T09:58:10.929Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-03T05:25:47.845Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T05:25:47.847Z] Command:       /home/thinley/.nvm/versions/node/v10.15.3/bin/node /home/thinley/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2020-02-03T05:25:47.847Z] CLI Version:   7.7.0
+[debug] [2020-02-03T05:25:47.847Z] Platform:      linux
+[debug] [2020-02-03T05:25:47.847Z] Node Version:  v10.15.3
+[debug] [2020-02-03T05:25:47.847Z] Time:          Mon Feb 03 2020 11:10:47 GMT+0545 (Nepal Time)
+[debug] [2020-02-03T05:25:47.847Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T05:25:47.847Z] 
+[debug] [2020-02-03T05:25:47.851Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-03T05:25:47.852Z] > authorizing via signed-in user
+[debug] [2020-02-03T05:25:47.852Z] [iam] checking project parkit-27a48 for permissions ["firebase.projects.get"]
+[debug] [2020-02-03T05:25:47.853Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parkit-27a48:testIamPermissions  
+
