@@ -403,13 +403,10 @@ function ResponsiveDrawer(props: any) {
     );
 }
 
-const mapSateToProps=()=>{
-
-}
 
 const mapActionsToProps = {
     logoutUser
 };
 
 
-export default connect(mapSateToProps,mapActionsToProps)(ResponsiveDrawer)
+export default connect(null,mapActionsToProps)(ResponsiveDrawer)

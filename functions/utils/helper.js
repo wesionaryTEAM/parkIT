@@ -19,6 +19,7 @@ const isEmail = (email) => {
 exports.validateSignUPData = (data) => {
 
     let errors = {};
+    console.log(data.email,'dataaa')
 
     if (isEmpty(data.email)) {
         errors.email = "Email Filed Is Required!"

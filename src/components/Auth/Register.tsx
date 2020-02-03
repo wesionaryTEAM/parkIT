@@ -11,8 +11,9 @@ import { ButtonComponent } from '../Layouts/ButtonComponent';
 import { Link, useHistory } from 'react-router-dom'
 import { userDataProps } from '../../interface/UserInterface'
 import validator from "validator";
-import axios from 'axios'
 import backgroundImage from '../../assests/images/carpark.png'
+import { useDispatch } from 'react-redux'
+import { userRegister } from '../../redux/actions/userActions'
 
 const useStyles = makeStyles(theme => ({
     container: {
@@ -83,7 +84,7 @@ interface profileData extends userDataProps {
 
 interface FormErrors extends profileData {
     errors: string;
-  }
+}
 
 function Register(props: userDataProps) {
 
@@ -98,11 +99,12 @@ function Register(props: userDataProps) {
     } as profileData);
     const [errors, setErrors] = useState({} as FormErrors);
     const [loading, setLoading] = useState(false);
+    const dispatch = useDispatch()
 
     const handleSubmit = (e: any) => {
         e.preventDefault();
         setLoading(true);
-        
+
         clearErrors();
         if (!validateForm()) {
             setLoading(false);
@@ -112,15 +114,17 @@ function Register(props: userDataProps) {
         const userData = {
             email: values.email,
             password: values.password,
+            confirmPassword: values.confirmPassword,
             firstname: values.firstname,
             lastname: values.lastname
         }
-        // TODO firebase method call 
+
+        dispatch(userRegister(userData, history))
     }
 
     const clearErrors = () => {
         const errors: { [key: string]: string } = {};
-        errors.email="";
+        errors.email = "";
         errors.password = "";
         handleErrors(errors);
     }
@@ -147,15 +151,15 @@ function Register(props: userDataProps) {
             errors.confirmPassword = "Password field is required!";
         }
 
-        if(!validator.trim(values.firstname)) {
+        if (!validator.trim(values.firstname)) {
             errors.firstname = "Firstname is required!";
         }
 
-        if(!validator.trim(values.lastname)) {
+        if (!validator.trim(values.lastname)) {
             errors.lastname = "Lastname is required!";
         }
 
-        if(values.password !== values.confirmPassword){
+        if (values.password !== values.confirmPassword) {
             errors.confirmPassword = "Password not matched!";
         }
 
@@ -230,33 +234,33 @@ function Register(props: userDataProps) {
                                             error={errors.lastname ? true : false}
                                         />
                                     </Grid>
-                                    </Grid>
-                                        <TextField
-                                            variant="outlined"
-                                            margin="normal"
-                                            value={values.email}
-                                            fullWidth
-                                            id="email"
-                                            label="Email*"
-                                            name="email"
-                                            type="email"
-                                            onChange={handleChange}
-                                            helperText={errors.email}
-                                            error={errors.email ? true : false}
-                                        />
-                                        <TextField
-                                            variant="outlined"
-                                            margin="normal"
-                                            value={values.password}
-                                            fullWidth
-                                            id="password"
-                                            label="Password*"
-                                            name="password"
-                                            type="password"
-                                            onChange={handleChange}
-                                            helperText={errors.password}
-                                            error={errors.password ? true : false}
-                                        />
+                                </Grid>
+                                <TextField
+                                    variant="outlined"
+                                    margin="normal"
+                                    value={values.email}
+                                    fullWidth
+                                    id="email"
+                                    label="Email*"
+                                    name="email"
+                                    type="email"
+                                    onChange={handleChange}
+                                    helperText={errors.email}
+                                    error={errors.email ? true : false}
+                                />
+                                <TextField
+                                    variant="outlined"
+                                    margin="normal"
+                                    value={values.password}
+                                    fullWidth
+                                    id="password"
+                                    label="Password*"
+                                    name="password"
+                                    type="password"
+                                    onChange={handleChange}
+                                    helperText={errors.password}
+                                    error={errors.password ? true : false}
+                                />
 
                                 <TextField
                                     variant="outlined"
@@ -277,7 +281,7 @@ function Register(props: userDataProps) {
                                     onClick={handleSubmit}
                                     disabled={loading}
                                     loading={loading}>
-                                        Register
+                                    Register
                                 </ButtonComponent>
                                 <Typography variant="h6" color="textSecondary" align="center">
                                     OR
