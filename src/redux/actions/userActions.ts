@@ -5,18 +5,16 @@ export const loginUser = (userData: any, history: any) => (dispatch: any) => {
     dispatch({ type: LOADING_UI })
 
     axios.post('login', userData)
-        .then((res) => {
+        .then(async (res) => {
             const token = `Bearer ${res.data.token}`;
             localStorage.setItem('token', `Bearer ${res.data.token}`);
             axios.defaults.headers.common['Authorization'] = token;
-            dispatch(getUserData());
+            await dispatch(getUserData());
             dispatch({ type: CLEAR_ERRORS });
-            console.log('success');
             history.push('/');
 
         })
         .catch((err) => {
-            console.log(err);
             dispatch({
                 type: SET_ERRORS,
                 payload: err.response.data
@@ -26,13 +24,31 @@ export const loginUser = (userData: any, history: any) => (dispatch: any) => {
         });
 }
 
+export const userRegister = (data: any, history: any) => (dispatch: any) => {
+    dispatch({ type: LOADING_UI });
+    axios.post('/register', data)
+        .then(async (res) => {
+            const token = `Bearer ${res.data.token}`;
+            localStorage.setItem('token', `Bearer ${res.data.token}`);
+            axios.defaults.headers.common['Authorization'] = token;
+            await dispatch(getUserData());
+            dispatch({ type: CLEAR_ERRORS });
+            history.push('/');
+        })
+        .catch(err => {
+            dispatch({
+                type: SET_ERRORS,
+                payload: err.response.data
+            });
 
-export const getUserData = () => (dispatch: any) => {
+        })
+}
+
+
+export const getUserData = () => async (dispatch: any) => {
     dispatch({ type: LOADING_USER });
-    axios.get('/user')
+    await axios.get('/user')
         .then(res => {
-            console.log('user data', res.data);
-
             dispatch({
                 type: SET_USER,
                 payload: res.data
