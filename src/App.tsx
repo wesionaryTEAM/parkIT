@@ -10,9 +10,8 @@ import PrivateRoute from './utils/PrivateRoute'
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { CheckAuthentication } from './utils/CheckAuthentication'
-
-
-
+import ProfileAdd from './components/pages/Profile/ProfileAdd';
+ 
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -38,8 +37,10 @@ const App: React.FC = () => {
               exact
               path='/register'
               component={Register} />
-
-
+            <Route
+            exact
+            path="/profile_add"
+            component={ProfileAdd} />
 
           </Switch>
         </Router>
