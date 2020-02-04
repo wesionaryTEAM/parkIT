@@ -96,13 +96,8 @@ function Login(props: any) {
     useEffect(() => {
         if (props.UI.errors) {
             setErrors(props.UI.errors);
-
-
         }
         setLoading(props.UI.loading);
-
-
-
     }, [props.UI])
 
 
