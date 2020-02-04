@@ -63,12 +63,26 @@ export const getUserData = () => async (dispatch: any) => {
 
 }
 
+export const userUpdateProfile = (data: any) => async (dispatch: any) => {
+    dispatch({ type: LOADING_UI });
+    await axios.post('/user/update-profile', data)
+        .then(async () => {
+            await dispatch({ type: CLEAR_ERRORS });
+        })
+        .catch(err => {
+            dispatch({
+                type: SET_ERRORS,
+                payload: err.response.data
+            });
+        })
+}
 
 
-export const logoutUser =  () =>  (dispatch: any) => {
+
+export const logoutUser = () => (dispatch: any) => {
     localStorage.removeItem('token');
     delete axios.defaults.headers.common['Authorization']
-     dispatch({
+    dispatch({
         type: SET_UNAUTHENTICATED
 
     });

@@ -20,9 +20,13 @@ import FormControl from '@material-ui/core/FormControl'
 import RadioGroup from '@material-ui/core/RadioGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import { ButtonComponent } from '../../Layouts/ButtonComponent';
+import { userUpdateProfile } from '../../../redux/actions/userActions';
+import { useDispatch, useSelector, } from 'react-redux';
+import { useEffect } from 'react'
+
+
 
 const useStyles = makeStyles((theme) => ({
-
   mainGrid: {
     width: "100%",
   },
@@ -71,6 +75,11 @@ interface FormError extends ProfileFormData {
   formError: string;
 }
 
+interface state {
+  user: any,
+  UI: any
+}
+
 
 function ProfileForm() {
   const classes = useStyles();
@@ -91,23 +100,34 @@ function ProfileForm() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [errors, setErrors] = useState({} as FormError);
   const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
+  const UI = useSelector((state: state) => state.UI)
+  const user = useSelector((state: state) => state.user)
+
 
   //functions
+
+  useEffect(() => {
+    if (UI.errors) {
+      setErrors(UI.errors);
+    }
+    setLoading(UI.loading);
+  }, [UI])
+
   const handleDateChange = (date: any) => {
     setSelectedDate(date);
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
     setLoading(true);
 
     if (!validateForm()) {
       setLoading(false);
       return;
-    }else{
-      alert("TODO Submit");
+    } else {
+      dispatch(userUpdateProfile(values));
     }
-    
   }
 
   const validateForm = () => {
@@ -135,14 +155,6 @@ function ProfileForm() {
 
     if (!validator.trim(values.province)) {
       errors.province = "Province is required!";
-    }
-
-    if (!validator.trim(values.emergencyContactName)) {
-      errors.emergencyContactName = "Emergency Contact Name is required!";
-    }
-
-    if (!validator.trim(values.emergencyContactNumber)) {
-      errors.emergencyContactNumber = "Emergency Contact Number is required!";
     }
 
     handleErrors(errors);
@@ -411,7 +423,7 @@ function ProfileForm() {
               onClick={handleSubmit}
               disabled={loading}
               loading={loading}>
-              Sign In
+              Update
 
             </ButtonComponent>
           </Grid>
