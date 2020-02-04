@@ -3,6 +3,8 @@ import thunk from 'redux-thunk'
 import userReducer from './reducers/userReducer'
 import uiReducer from './reducers/uiReducer'
 import { composeWithDevTools } from 'redux-devtools-extension';
+import storage from 'redux-persist/lib/storage'
+import { persistStore, persistReducer } from 'redux-persist'
 const initialState = {};
 const middleware = [thunk];
 declare global {
@@ -16,10 +18,19 @@ const reducer = combineReducers({
     UI: uiReducer
 
 });
+const persistConfig = {
+    key: 'root',
+    storage,
+    whitelist: ['user']
+}
+const persistedReducer = persistReducer(persistConfig, reducer)
 
-const store = createStore(reducer, initialState, composeWithDevTools(
+
+const store = createStore(persistedReducer, initialState, composeWithDevTools(
     applyMiddleware(...middleware),
     // other store enhancers if any
-  ),);
+));
 
-export default store;
+const persistor = persistStore(store)
+
+export { store, persistor };

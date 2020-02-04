@@ -8,10 +8,11 @@ import PrivateRoute from './utils/PrivateRoute'
 
 //redux stuff
 import { Provider } from 'react-redux';
-import store from './redux/store';
+import { store, persistor } from './redux/store';
 import { CheckAuthentication } from './utils/CheckAuthentication'
 import ProfileAdd from './components/pages/Profile/ProfileAdd';
- 
+import { PersistGate } from 'redux-persist/integration/react';
+
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -22,28 +23,30 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Provider store={store}>
-        <Router>
-          <Switch>
-            <PrivateRoute
-              exact
-              path="/"
-              component={Index} />
+        <PersistGate loading={null} persistor={persistor}>
+          <Router>
+            <Switch>
+              <PrivateRoute
+                exact
+                path="/"
+                component={Index} />
 
-            <GuestRoute
-              exact
-              path='/login'
-              component={Login} />
-            <GuestRoute
-              exact
-              path='/register'
-              component={Register} />
-            <PrivateRoute
-            exact
-            path="/profile_add"
-            component={ProfileAdd} />
+              <GuestRoute
+                exact
+                path='/login'
+                component={Login} />
+              <GuestRoute
+                exact
+                path='/register'
+                component={Register} />
+              <PrivateRoute
+                exact
+                path="/profile_add"
+                component={ProfileAdd} />
 
-          </Switch>
-        </Router>
+            </Switch>
+          </Router>
+        </PersistGate>
       </Provider>
     </div>
   )

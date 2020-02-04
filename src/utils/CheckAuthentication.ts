@@ -1,6 +1,6 @@
 import jwtDecode from 'jwt-decode';
 import { logoutUser, getUserData } from '../redux/actions/userActions'
-import store from '../redux/store';
+import {store} from '../redux/store';
 import axios from 'axios';
 import { SET_AUTHENTICATED } from '../redux/types'
 
