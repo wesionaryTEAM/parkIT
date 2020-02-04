@@ -1,1021 +1,836 @@
-[debug] [2020-02-03T06:20:20.477Z] ----------------------------------------------------------------------
-[debug] [2020-02-03T06:20:20.479Z] Command:       /home/thinley/.nvm/versions/node/v10.15.3/bin/node /home/thinley/.nvm/versions/node/v10.15.3/bin/firebase serve
-[debug] [2020-02-03T06:20:20.479Z] CLI Version:   7.7.0
-[debug] [2020-02-03T06:20:20.479Z] Platform:      linux
-[debug] [2020-02-03T06:20:20.479Z] Node Version:  v10.15.3
-[debug] [2020-02-03T06:20:20.479Z] Time:          Mon Feb 03 2020 12:05:20 GMT+0545 (Nepal Time)
-[debug] [2020-02-03T06:20:20.479Z] ----------------------------------------------------------------------
-[debug] [2020-02-03T06:20:20.479Z] 
-[debug] [2020-02-03T06:20:20.485Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-02-03T06:20:20.485Z] > authorizing via signed-in user
-[debug] [2020-02-03T06:20:20.485Z] [iam] checking project parkit-27a48 for permissions ["firebase.projects.get"]
-[debug] [2020-02-03T06:20:20.487Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-02-03T06:20:20.487Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-02-03T06:20:21.492Z] <<< HTTP RESPONSE 200
-[debug] [2020-02-03T06:20:21.523Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parkit-27a48:testIamPermissions  
+[debug] [2020-02-04T09:28:27.003Z] ----------------------------------------------------------------------
+[debug] [2020-02-04T09:28:27.005Z] Command:       /home/thinley/.nvm/versions/node/v10.15.3/bin/node /home/thinley/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2020-02-04T09:28:27.005Z] CLI Version:   7.7.0
+[debug] [2020-02-04T09:28:27.005Z] Platform:      linux
+[debug] [2020-02-04T09:28:27.005Z] Node Version:  v10.15.3
+[debug] [2020-02-04T09:28:27.005Z] Time:          Tue Feb 04 2020 15:13:27 GMT+0545 (Nepal Time)
+[debug] [2020-02-04T09:28:27.005Z] ----------------------------------------------------------------------
+[debug] [2020-02-04T09:28:27.005Z] 
+[debug] [2020-02-04T09:28:27.009Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-04T09:28:27.010Z] > authorizing via signed-in user
+[debug] [2020-02-04T09:28:27.010Z] [iam] checking project parkit-27a48 for permissions ["firebase.projects.get"]
+[debug] [2020-02-04T09:28:27.011Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parkit-27a48:testIamPermissions  
 
-[debug] [2020-02-03T06:20:23.211Z] <<< HTTP RESPONSE 200
-[debug] [2020-02-03T06:20:23.212Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/parkit-27a48  
+[debug] [2020-02-04T09:28:29.518Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-04T09:28:29.527Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/parkit-27a48  
  
-[debug] [2020-02-03T06:20:24.952Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-04T09:28:30.991Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/thinley/Desktop/reactLearn/parkIT'...
 [info] 
 [warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
 [info] ✔  functions: Emulator started at http://localhost:5000
 [info] i  functions: Watching "/home/thinley/Desktop/reactLearn/parkIT/functions" for Cloud Functions...
-[debug] [2020-02-03T06:20:25.236Z] [worker-~diagnostic~-a2e860de-97f3-40c1-b37e-a071ffab2d2d]: BUSY
-[debug] [2020-02-03T06:20:25.534Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:20:25.537Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:20:25.541Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:20:25.542Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:20:25.544Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-04T09:28:31.273Z] [worker-~diagnostic~-f573a3ff-e2d1-45e2-a818-fcf6c91b2cf6]: BUSY
+[debug] [2020-02-04T09:28:31.568Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-04T09:28:31.570Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2020-02-04T09:28:31.571Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-04T09:28:31.572Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-04T09:28:31.573Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
 [info] ✔  functions[api]: http function initialized (http://localhost:5000/parkit-27a48/us-central1/api).
-[debug] [2020-02-03T06:20:28.236Z] [worker-~diagnostic~-a2e860de-97f3-40c1-b37e-a071ffab2d2d]: exited
-[debug] [2020-02-03T06:20:28.236Z] [worker-~diagnostic~-a2e860de-97f3-40c1-b37e-a071ffab2d2d]: FINISHED
-[debug] [2020-02-03T06:36:24.325Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js changed, reloading triggers
-[debug] [2020-02-03T06:36:25.333Z] [worker-~diagnostic~-9fb6cd09-63c7-44b8-9f57-0317416ad465]: BUSY
-[debug] [2020-02-03T06:36:25.662Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:36:25.665Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:36:25.668Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:36:25.669Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:36:25.671Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:36:26.203Z] [worker-~diagnostic~-9fb6cd09-63c7-44b8-9f57-0317416ad465]: exited
-[debug] [2020-02-03T06:36:26.203Z] [worker-~diagnostic~-9fb6cd09-63c7-44b8-9f57-0317416ad465]: FINISHED
-[debug] [2020-02-03T06:36:31.515Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js changed, reloading triggers
-[debug] [2020-02-03T06:36:31.875Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js changed, reloading triggers
-[debug] [2020-02-03T06:36:32.055Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js changed, reloading triggers
-[debug] [2020-02-03T06:36:32.713Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js changed, reloading triggers
-[debug] [2020-02-03T06:36:33.731Z] [worker-~diagnostic~-4751367d-026f-418b-8b98-d1c4e35db35c]: BUSY
-[debug] [2020-02-03T06:36:34.073Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:36:34.075Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:36:34.077Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:36:34.078Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:36:34.078Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:36:34.570Z] [worker-~diagnostic~-4751367d-026f-418b-8b98-d1c4e35db35c]: exited
-[debug] [2020-02-03T06:36:34.570Z] [worker-~diagnostic~-4751367d-026f-418b-8b98-d1c4e35db35c]: FINISHED
-[debug] [2020-02-03T06:36:38.562Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:36:38.565Z] [worker-api-d73d2569-884a-4aa2-9a7b-7c11916aab83]: BUSY
-[debug] [2020-02-03T06:36:39.061Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:36:39.063Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:36:39.065Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:36:39.066Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:36:39.067Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:36:39.548Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:28:36.521Z] [worker-~diagnostic~-f573a3ff-e2d1-45e2-a818-fcf6c91b2cf6]: exited
+[debug] [2020-02-04T09:28:36.521Z] [worker-~diagnostic~-f573a3ff-e2d1-45e2-a818-fcf6c91b2cf6]: FINISHED
+[debug] [2020-02-04T09:28:43.226Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:28:43.235Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:28:43.662Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-04T09:28:43.665Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2020-02-04T09:28:43.672Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-04T09:28:43.674Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-04T09:28:43.676Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-04T09:28:44.200Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:36:39.549Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:36:39.549Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:36:39.555Z] {"socketPath":"/tmp/firebase_emulator_invocation_9873.sock"}
-[debug] [2020-02-03T06:36:39.557Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9873.sock"}
-[debug] [2020-02-03T06:36:39.574Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:36:39.580Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:28:44.201Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:28:44.201Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:28:44.209Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:28:44.212Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:28:44.230Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:28:44.247Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:36:39.580Z] [worker-api-d73d2569-884a-4aa2-9a7b-7c11916aab83]: IDLE
-[debug] [2020-02-03T06:36:52.869Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:36:52.869Z] [worker-api-d73d2569-884a-4aa2-9a7b-7c11916aab83]: BUSY
-[debug] [2020-02-03T06:36:52.870Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:28:44.248Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:28:49.377Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:28:49.377Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:28:49.378Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:36:52.871Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:36:52.871Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:36:52.872Z] {"socketPath":"/tmp/firebase_emulator_invocation_9873.sock"}
-[debug] [2020-02-03T06:36:52.874Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9873.sock"}
-[debug] [2020-02-03T06:36:52.899Z] [runtime-status] Ephemeral server used! {}
-[info] >   string
-[debug] [2020-02-03T06:36:52.902Z] [runtime-status] Ephemeral server survived. {}
-[info] >  TypeError: Cannot read property 'trim' of undefined
-[info] >      at isEmpty (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:4:16)
-[info] >      at exports.validateSignUPData (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:24:9)
-[info] >      at exports.signUp (/home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js:14:31)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:137:13)
-[info] >      at Route.dispatch (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:112:3)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at /home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:281:22
-[info] >      at Function.process_params (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:335:12)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:275:10)
+[debug] [2020-02-04T09:28:49.378Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:28:49.378Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:28:49.379Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:28:49.380Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:28:49.389Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:28:49.389Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:36:52.906Z] [worker-api-d73d2569-884a-4aa2-9a7b-7c11916aab83]: IDLE
-[debug] [2020-02-03T06:37:31.369Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js changed, reloading triggers
-[debug] [2020-02-03T06:37:32.370Z] [worker-pool]: Shutting down IDLE worker (api)
-[debug] [2020-02-03T06:37:32.379Z] [worker-~diagnostic~-29a67c8a-85a4-4e10-b3c5-da44cba5fdbc]: BUSY
-[debug] [2020-02-03T06:37:32.381Z] [worker-api-d73d2569-884a-4aa2-9a7b-7c11916aab83]: exited
-[debug] [2020-02-03T06:37:32.381Z] [worker-api-d73d2569-884a-4aa2-9a7b-7c11916aab83]: FINISHED
-[debug] [2020-02-03T06:37:32.828Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:37:32.830Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:37:32.833Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:37:32.834Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:37:32.835Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:37:33.301Z] [worker-~diagnostic~-29a67c8a-85a4-4e10-b3c5-da44cba5fdbc]: exited
-[debug] [2020-02-03T06:37:33.301Z] [worker-~diagnostic~-29a67c8a-85a4-4e10-b3c5-da44cba5fdbc]: FINISHED
-[debug] [2020-02-03T06:37:39.971Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js changed, reloading triggers
-[debug] [2020-02-03T06:37:40.985Z] [worker-~diagnostic~-d5409608-59da-444e-928e-bf581291278b]: BUSY
-[debug] [2020-02-03T06:37:41.383Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:37:41.385Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:37:41.386Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:37:41.387Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:37:41.388Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:37:41.870Z] [worker-~diagnostic~-d5409608-59da-444e-928e-bf581291278b]: exited
-[debug] [2020-02-03T06:37:41.871Z] [worker-~diagnostic~-d5409608-59da-444e-928e-bf581291278b]: FINISHED
-[debug] [2020-02-03T06:37:44.455Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:37:44.459Z] [worker-api-b674bae0-ff5b-4278-9e90-3655def3642d]: BUSY
-[debug] [2020-02-03T06:37:44.935Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:37:44.937Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:37:44.939Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:37:44.940Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:37:44.941Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:37:45.348Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:28:49.389Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:28:50.708Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:28:50.708Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:28:50.709Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:37:45.349Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:37:45.349Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:37:45.354Z] {"socketPath":"/tmp/firebase_emulator_invocation_9926.sock"}
-[debug] [2020-02-03T06:37:45.360Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9926.sock"}
-[debug] [2020-02-03T06:37:45.373Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:37:45.379Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:28:50.709Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:28:50.709Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:28:50.710Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:28:50.710Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:28:50.718Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:28:50.718Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:37:45.383Z] [worker-api-b674bae0-ff5b-4278-9e90-3655def3642d]: IDLE
-[debug] [2020-02-03T06:38:04.005Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:38:04.005Z] [worker-api-b674bae0-ff5b-4278-9e90-3655def3642d]: BUSY
-[debug] [2020-02-03T06:38:04.006Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:28:50.719Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:28:50.778Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:28:50.778Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:28:50.779Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:38:04.006Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:38:04.007Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:38:04.008Z] {"socketPath":"/tmp/firebase_emulator_invocation_9926.sock"}
-[debug] [2020-02-03T06:38:04.009Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9926.sock"}
-[debug] [2020-02-03T06:38:04.033Z] [runtime-status] Ephemeral server used! {}
-[info] >  [object Object] dataaa
-[debug] [2020-02-03T06:38:04.038Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:28:50.779Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:28:50.779Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:28:50.779Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:28:50.781Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:28:50.783Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:28:50.784Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:38:04.038Z] [worker-api-b674bae0-ff5b-4278-9e90-3655def3642d]: IDLE
-[info] >  TypeError: Cannot read property 'trim' of undefined
-[info] >      at isEmpty (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:3:16)
-[info] >      at exports.validateSignUPData (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:24:9)
-[info] >      at exports.signUp (/home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js:14:31)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:137:13)
-[info] >      at Route.dispatch (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:112:3)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at /home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:281:22
-[info] >      at Function.process_params (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:335:12)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:275:10)
-[debug] [2020-02-03T06:39:42.339Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js changed, reloading triggers
-[debug] [2020-02-03T06:39:43.340Z] [worker-pool]: Shutting down IDLE worker (api)
-[debug] [2020-02-03T06:39:43.355Z] [worker-~diagnostic~-542886bf-f13f-4b18-b27b-9f4027139c64]: BUSY
-[debug] [2020-02-03T06:39:43.358Z] [worker-api-b674bae0-ff5b-4278-9e90-3655def3642d]: exited
-[debug] [2020-02-03T06:39:43.358Z] [worker-api-b674bae0-ff5b-4278-9e90-3655def3642d]: FINISHED
-[debug] [2020-02-03T06:39:43.684Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:39:43.687Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:39:43.690Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:39:43.691Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:39:43.691Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:39:44.197Z] [worker-~diagnostic~-542886bf-f13f-4b18-b27b-9f4027139c64]: exited
-[debug] [2020-02-03T06:39:44.197Z] [worker-~diagnostic~-542886bf-f13f-4b18-b27b-9f4027139c64]: FINISHED
-[debug] [2020-02-03T06:39:48.982Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:39:48.985Z] [worker-api-7f2077be-4a77-454a-8893-76179784bb7b]: BUSY
-[debug] [2020-02-03T06:39:49.449Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:39:49.451Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:39:49.453Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:39:49.453Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:39:49.454Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:39:49.856Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:28:50.784Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:29:24.039Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:29:24.039Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:29:24.040Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:39:49.857Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:39:49.858Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:39:49.864Z] {"socketPath":"/tmp/firebase_emulator_invocation_9971.sock"}
-[debug] [2020-02-03T06:39:49.865Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9971.sock"}
-[debug] [2020-02-03T06:39:49.879Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:39:49.885Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:29:24.041Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:29:24.041Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:29:24.042Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:24.042Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:24.047Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:29:24.047Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:39:49.890Z] [worker-api-7f2077be-4a77-454a-8893-76179784bb7b]: IDLE
-[debug] [2020-02-03T06:40:03.449Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:40:03.449Z] [worker-api-7f2077be-4a77-454a-8893-76179784bb7b]: BUSY
-[debug] [2020-02-03T06:40:03.450Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:29:24.047Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:29:29.223Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
+[debug] [2020-02-04T09:29:29.223Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:29:29.225Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:40:03.450Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:40:03.450Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:40:03.451Z] {"socketPath":"/tmp/firebase_emulator_invocation_9971.sock"}
-[debug] [2020-02-03T06:40:03.452Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9971.sock"}
-[debug] [2020-02-03T06:40:03.467Z] [runtime-status] Ephemeral server used! {}
-[info] >   dataaa
-[debug] [2020-02-03T06:40:03.470Z] [runtime-status] Ephemeral server survived. {}
-[info] >  TypeError: Cannot read property 'trim' of undefined
-[info] >      at isEmpty (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:3:16)
-[info] >      at exports.validateSignUPData (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:24:9)
-[info] >      at exports.signUp (/home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js:14:31)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:137:13)
-[info] >      at Route.dispatch (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:112:3)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at /home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:281:22
-[info] >      at Function.process_params (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:335:12)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:275:10)
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:40:03.472Z] [worker-api-7f2077be-4a77-454a-8893-76179784bb7b]: IDLE
-[debug] [2020-02-03T06:40:35.755Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js changed, reloading triggers
-[debug] [2020-02-03T06:40:36.755Z] [worker-pool]: Shutting down IDLE worker (api)
-[debug] [2020-02-03T06:40:36.770Z] [worker-~diagnostic~-5553beb1-c299-408c-8eba-9e6639ccb167]: BUSY
-[debug] [2020-02-03T06:40:36.772Z] [worker-api-7f2077be-4a77-454a-8893-76179784bb7b]: exited
-[debug] [2020-02-03T06:40:36.773Z] [worker-api-7f2077be-4a77-454a-8893-76179784bb7b]: FINISHED
-[debug] [2020-02-03T06:40:37.288Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:40:37.290Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:40:37.292Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:40:37.294Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:40:37.295Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:40:37.763Z] [worker-~diagnostic~-5553beb1-c299-408c-8eba-9e6639ccb167]: exited
-[debug] [2020-02-03T06:40:37.763Z] [worker-~diagnostic~-5553beb1-c299-408c-8eba-9e6639ccb167]: FINISHED
-[debug] [2020-02-03T06:40:53.459Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js changed, reloading triggers
-[debug] [2020-02-03T06:40:54.478Z] [worker-~diagnostic~-0e79d637-a751-4b2f-b32a-b390afeef9d0]: BUSY
-[debug] [2020-02-03T06:40:54.832Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:40:54.834Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:40:54.835Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:40:54.836Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:40:54.836Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:40:55.317Z] [worker-~diagnostic~-0e79d637-a751-4b2f-b32a-b390afeef9d0]: exited
-[debug] [2020-02-03T06:40:55.317Z] [worker-~diagnostic~-0e79d637-a751-4b2f-b32a-b390afeef9d0]: FINISHED
-[debug] [2020-02-03T06:40:56.937Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:40:56.942Z] [worker-api-73da7491-127f-4319-888b-606f57a1c69d]: BUSY
-[debug] [2020-02-03T06:40:57.427Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:40:57.429Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:40:57.430Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:40:57.431Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:40:57.431Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:40:57.843Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:40:57.843Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:40:57.843Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:40:57.848Z] {"socketPath":"/tmp/firebase_emulator_invocation_10023.sock"}
-[debug] [2020-02-03T06:40:57.849Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10023.sock"}
-[debug] [2020-02-03T06:40:57.865Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:40:57.872Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:40:57.873Z] [worker-api-73da7491-127f-4319-888b-606f57a1c69d]: IDLE
-[debug] [2020-02-03T06:41:10.431Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:41:10.431Z] [worker-api-73da7491-127f-4319-888b-606f57a1c69d]: BUSY
-[debug] [2020-02-03T06:41:10.432Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:41:10.433Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:41:10.433Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:41:10.434Z] {"socketPath":"/tmp/firebase_emulator_invocation_10023.sock"}
-[debug] [2020-02-03T06:41:10.435Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10023.sock"}
-[debug] [2020-02-03T06:41:10.456Z] [runtime-status] Ephemeral server used! {}
-[info] >  [object Object] userrr
-[info] >   dataaa
-[debug] [2020-02-03T06:41:10.459Z] [runtime-status] Ephemeral server survived. {}
-[info] >  TypeError: Cannot read property 'trim' of undefined
-[info] >      at isEmpty (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:3:16)
-[info] >      at exports.validateSignUPData (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:24:9)
-[info] >      at exports.signUp (/home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js:15:31)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:137:13)
-[info] >      at Route.dispatch (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:112:3)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at /home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:281:22
-[info] >      at Function.process_params (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:335:12)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:275:10)
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:41:10.468Z] [worker-api-73da7491-127f-4319-888b-606f57a1c69d]: IDLE
-[debug] [2020-02-03T06:41:23.969Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js changed, reloading triggers
-[debug] [2020-02-03T06:41:24.970Z] [worker-pool]: Shutting down IDLE worker (api)
-[debug] [2020-02-03T06:41:24.986Z] [worker-~diagnostic~-d084e0ed-d54c-44fb-bdda-27ad966dbddf]: BUSY
-[debug] [2020-02-03T06:41:24.989Z] [worker-api-73da7491-127f-4319-888b-606f57a1c69d]: exited
-[debug] [2020-02-03T06:41:24.989Z] [worker-api-73da7491-127f-4319-888b-606f57a1c69d]: FINISHED
-[debug] [2020-02-03T06:41:25.338Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:41:25.339Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:41:25.341Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:41:25.341Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:41:25.342Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:41:25.870Z] [worker-~diagnostic~-d084e0ed-d54c-44fb-bdda-27ad966dbddf]: exited
-[debug] [2020-02-03T06:41:25.870Z] [worker-~diagnostic~-d084e0ed-d54c-44fb-bdda-27ad966dbddf]: FINISHED
-[debug] [2020-02-03T06:41:29.384Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:41:29.388Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:41:29.920Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T06:41:29.923Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T06:41:29.925Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T06:41:29.925Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:41:29.926Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T06:41:30.384Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:41:30.385Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:41:30.385Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:41:30.390Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:41:30.391Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:41:30.404Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:41:30.412Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:41:30.413Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:41:41.727Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:41:41.727Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:41:41.728Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:41:41.728Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:41:41.729Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:41:41.730Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:41:41.731Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:41:41.753Z] [runtime-status] Ephemeral server used! {}
-[info] >   userrr
-[info] >   dataaa
-[debug] [2020-02-03T06:41:41.756Z] [runtime-status] Ephemeral server survived. {}
-[info] >  TypeError: Cannot read property 'trim' of undefined
-[info] >      at isEmpty (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:3:16)
-[info] >      at exports.validateSignUPData (/home/thinley/Desktop/reactLearn/parkIT/functions/utils/helper.js:24:9)
-[info] >      at exports.signUp (/home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js:15:31)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:137:13)
-[info] >      at Route.dispatch (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/route.js:112:3)
-[info] >      at Layer.handle [as handle_request] (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/layer.js:95:5)
-[info] >      at /home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:281:22
-[info] >      at Function.process_params (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:335:12)
-[info] >      at next (/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/express/lib/router/index.js:275:10)
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:41:41.766Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:42:14.579Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:42:14.579Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:42:14.580Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:42:14.582Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:42:14.582Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:42:14.582Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:42:14.583Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:42:14.590Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:42:14.593Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:42:14.594Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:42:18.053Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:42:18.054Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:42:18.054Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:42:18.055Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:42:18.055Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:42:18.055Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:42:18.056Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:42:18.062Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:42:18.063Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:42:18.064Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:43:01.160Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:43:01.160Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:43:01.160Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:43:01.161Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:43:01.161Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:43:01.161Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:43:01.162Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:43:01.166Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:43:01.166Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:43:01.166Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:43:04.631Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:43:04.631Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:43:04.633Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:43:04.633Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:43:04.633Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:43:04.633Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:43:04.634Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:43:04.640Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:43:04.641Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:43:04.641Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:43:26.612Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:43:26.612Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:43:26.613Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:43:26.613Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:43:26.613Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:43:26.614Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:43:26.614Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:43:26.618Z] [runtime-status] Ephemeral server used! {}
-[info] >  thinley userrr
-[info] >  thinleytyrant@gmail.com dataaa
-[debug] [2020-02-03T06:43:26.622Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:43:26.623Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:43:36.417Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:43:36.417Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:43:36.418Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:43:36.419Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:43:36.419Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:43:36.419Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:43:36.420Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:43:36.422Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:43:36.423Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:43:36.423Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:44:00.157Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:44:00.157Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:44:00.158Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:44:00.158Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:44:00.158Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:44:00.160Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:44:00.161Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:44:00.169Z] [runtime-status] Ephemeral server used! {}
-[info] >  thinley userrr
-[info] >  thinleytyrant@gmail.com dataaa
-[debug] [2020-02-03T06:44:00.169Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:44:00.170Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:46:05.887Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:46:05.887Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:46:05.888Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:46:05.888Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:46:05.888Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:46:05.889Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:46:05.889Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:46:05.896Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:46:05.896Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:46:05.896Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:46:27.496Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:46:27.496Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:46:27.497Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:46:27.497Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:46:27.498Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:46:27.498Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:46:27.498Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:46:27.505Z] [runtime-status] Ephemeral server used! {}
-[info] >  thinley userrr
-[info] >  thinleytyrant@gmail.com dataaa
-[debug] [2020-02-03T06:46:27.511Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~7s
-[debug] [2020-02-03T06:46:34.918Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:50:38.915Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:50:38.915Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:50:38.915Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:50:38.916Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:50:38.916Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:50:38.916Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:50:38.917Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:50:38.921Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:50:38.922Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:50:38.922Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:50:41.426Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:50:41.426Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:50:41.428Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:50:41.428Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:50:41.428Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:50:41.428Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:50:41.429Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:50:41.434Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:50:41.435Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:50:41.436Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:53:37.901Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:53:37.901Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:53:37.902Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:53:37.902Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:53:37.902Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:53:37.903Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:53:37.903Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:53:37.905Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:53:37.906Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:53:37.906Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:53:51.151Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:53:51.151Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:53:51.151Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:53:51.152Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:53:51.152Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:53:51.152Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:53:51.153Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:53:51.156Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:53:51.157Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:53:51.157Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:54:10.316Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-02-03T06:54:10.316Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:54:10.317Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:54:10.318Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:54:10.318Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:54:10.319Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:54:10.320Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:54:10.325Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:54:10.328Z] [runtime-status] Ephemeral server survived. {}
-[info] >  {"user":{"uid":"aMPcpBQM0jgy7JidvIhSfEsEyT43","displayName":null,"photoURL":null,"email":"thinleytyrant@gmail.com","emailVerified":false,"phoneNumber":null,"isAnonymous":false,"tenantId":null,"providerData":[{"uid":"thinleytyrant@gmail.com","displayName":null,"photoURL":null,"email":"thinleytyrant@gmail.com","phoneNumber":null,"providerId":"password"}],"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","appName":"[DEFAULT]","authDomain":"parkit-27a48.firebaseapp.com","stsTokenManager":{"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","refreshToken":"AEu4IL1-LUfWEzYF3sSDX842LhT9d_eBzyf0lGC-Rp3YCxXWaqWXcjvzp4a8ALmGZDb6L2c7QDlGKmNyWV_IphMHkP3_BE8T1M_IqYCBpTxbLGnZLhLa53_0MuCPA6QcPl8W7hAk2I8GcVRfEpEHkAZLL_DmVyyyXE0cdxsQIgcwiUx1w8YXbNyJs8ZYAv9yssl-BLG41obTnXX4XTch_Mp5X51zBdHEGw","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1OTc0MmQyNjlhY2IzNWZiNjU3YzBjNGRkMmM3YjcyYWEzMTRiNTAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcGFya2l0LTI3YTQ4IiwiYXVkIjoicGFya2l0LTI3YTQ4IiwiYXV0aF90aW1lIjoxNTgwNzEyODUxLCJ1c2VyX2lkIjoiYU1QY3BCUU0wamd5N0ppZHZJaFNmRXNFeVQ0MyIsInN1YiI6ImFNUGNwQlFNMGpneTdKaWR2SWhTZkVzRXlUNDMiLCJpYXQiOjE1ODA3MTI4NTEsImV4cCI6MTU4MDcxNjQ1MSwiZW1haWwiOiJ0aGlubGV5dHlyYW50QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0aGlubGV5dHlyYW50QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.cx4ElJWkYf2CBpsNp532B-3vq8RLyXNo0JDI1zf6NWShbfFKlR_96wpbyojRJkVi8vobsPRpp8rn4GUKfGshY59yS9hNfQdjLcBao_PR2M6LDmKeBebq4GMTSHgqpcVqre3y24xH-DWXKRhF6VbVVhPKVJqmCKJVI-YJ4ToJ6iohmO0ZhS310g8zj5c6tL1yFci1vsreg-cHuY6rB9PBkTjmUIZ-BnBOPOL5oF7le-n9wdVMRXQ1c9pQ8PpIip_6RksBHyMY3D6l_J7ZCbomeEzrfVJZUa2Jhx-7QfdBBcDov-2S0FN_rzvv3F_NBh6ov5wLytlGvJTp2jMD34E3PQ","expirationTime":1580716451976},"redirectEventId":null,"lastLoginAt":"1580712851643","createdAt":"1580712391830"},"credential":null,"additionalUserInfo":{"providerId":"password","isNewUser":false},"operationType":"signIn"}
+[debug] [2020-02-04T09:29:29.226Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:29:29.226Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:29:29.226Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:29.229Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:29.311Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:29:29.334Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~2s
-[debug] [2020-02-03T06:54:13.316Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:54:13.470Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T06:54:13.470Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:54:13.471Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:29:31.946Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:29:32.020Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:29:32.020Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:29:32.022Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:54:13.471Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:54:13.471Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:54:13.473Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:54:13.474Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:54:13.478Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:54:13.510Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:29:32.023Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:29:32.023Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:29:32.024Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:32.029Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:32.039Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:29:32.396Z] [runtime-status] Ephemeral server survived. {}
 [info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
-[info] >  success { createdAt: '2020-02-03T06:46:34.881Z',
-[info] >    email: 'thinleytyrant@gmail.com',
-[info] >    userId: 'aMPcpBQM0jgy7JidvIhSfEsEyT43' }
+[info] i  functions: Finished "api" in ~4s
+[debug] [2020-02-04T09:29:36.054Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:29:41.404Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:29:41.404Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:29:41.404Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:29:41.405Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:29:41.405Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:29:41.405Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:41.406Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:41.411Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:29:41.496Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:29:41.498Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:29:44.692Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:29:44.692Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:29:44.692Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:29:44.693Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:29:44.693Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:29:44.693Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:44.694Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:29:44.702Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:29:44.703Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:29:44.703Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:30:04.159Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:30:04.159Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:30:04.162Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:30:04.162Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:30:04.162Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:30:04.162Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:04.163Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:04.176Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:30:04.176Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:30:04.176Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:30:12.427Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:30:12.427Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:30:12.429Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:30:12.429Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:30:12.429Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:30:12.429Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:12.430Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:12.432Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:30:12.434Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:30:12.434Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:30:17.695Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:30:17.695Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:30:17.697Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:30:17.698Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:30:17.698Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:30:17.698Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:17.699Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:17.705Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:30:17.706Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:30:17.706Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:30:20.279Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:30:20.279Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:30:20.283Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:30:20.283Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:30:20.283Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:30:20.283Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:20.284Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:20.290Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:30:20.290Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:30:20.290Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:30:26.811Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
+[debug] [2020-02-04T09:30:26.811Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:30:26.814Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:30:26.815Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:30:26.815Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:30:26.816Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:26.816Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:26.820Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:30:26.821Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~2s
-[debug] [2020-02-03T06:54:16.192Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:56:56.453Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T06:56:56.453Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:56:56.453Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:30:29.726Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:30:29.835Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:30:29.835Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:30:29.836Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:56:56.453Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:56:56.454Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:56:56.455Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:56:56.456Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:56:56.459Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:56:56.460Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:30:29.837Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:30:29.837Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:30:29.838Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:29.838Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:30:29.841Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:30:29.841Z] [runtime-status] Ephemeral server survived. {}
+[info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:56:56.460Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:57:49.586Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T06:57:49.586Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:57:49.591Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:30:30.832Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:32:30.477Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:32:30.477Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:32:30.479Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:57:49.591Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:57:49.591Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:57:49.592Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:57:49.593Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:57:49.606Z] [runtime-status] Ephemeral server used! {}
-[info] >  bishap userrr
-[info] >  bishap@gmail.com dataaa
-[debug] [2020-02-03T06:57:49.607Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:32:30.479Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:30.480Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:30.480Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:30.481Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:30.487Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:30.490Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:32:30.490Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:32:33.640Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:32:33.640Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:32:33.643Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:32:33.643Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:33.643Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:33.643Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:33.644Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:33.647Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:32:33.651Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: BUSY
+[debug] [2020-02-04T09:32:33.657Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:33.659Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:32:33.660Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:32:33.747Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:32:33.747Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:32:33.750Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:32:33.752Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:33.752Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:33.753Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:33.753Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:33.756Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:33.763Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:32:33.763Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:32:34.110Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-04T09:32:34.111Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2020-02-04T09:32:34.113Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-04T09:32:34.114Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-04T09:32:34.114Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-04T09:32:34.497Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:32:34.497Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:34.497Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:34.504Z] {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:32:34.505Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:32:34.516Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:34.546Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:32:36.928Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:32:36.928Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:32:36.930Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:32:36.930Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:36.930Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:36.930Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:36.931Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:36.934Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:32:36.942Z] [worker-api-f26908ef-1548-4b1c-8934-15b1f94d25fc]: BUSY
+[debug] [2020-02-04T09:32:36.943Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:36.943Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:32:37.330Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
+[debug] [2020-02-04T09:32:37.332Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2020-02-04T09:32:37.333Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-04T09:32:37.334Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-04T09:32:37.335Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
+[info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
+[info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:32:37.774Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:32:37.784Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:32:37.785Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:37.785Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:37.793Z] {"socketPath":"/tmp/firebase_emulator_invocation_4900.sock"}
+[debug] [2020-02-04T09:32:37.794Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4900.sock"}
+[debug] [2020-02-04T09:32:37.824Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:37.833Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:32:37.835Z] [worker-api-f26908ef-1548-4b1c-8934-15b1f94d25fc]: IDLE
+[debug] [2020-02-04T09:32:37.892Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:32:37.892Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:32:37.892Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:32:37.893Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:37.893Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:37.893Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:37.894Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:37.897Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:37.898Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:32:37.898Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
 [info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T06:57:53.146Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T06:57:53.299Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T06:57:53.299Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T06:57:53.301Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:32:38.017Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: IDLE
+[debug] [2020-02-04T09:32:47.361Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:32:47.362Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:32:47.362Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T06:57:53.301Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T06:57:53.302Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T06:57:53.302Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:57:53.302Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T06:57:53.306Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T06:57:53.307Z] [runtime-status] Ephemeral server survived. {}
-[info] >  userID wUv1lZFQPzeAxKoDHYzQ9kjLZCc2
-[info] >  success { createdAt: '2020-02-03T06:57:53.132Z',
-[info] >    email: 'bishap@gmail.com',
-[info] >    userId: 'wUv1lZFQPzeAxKoDHYzQ9kjLZCc2' }
+[debug] [2020-02-04T09:32:47.362Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:47.362Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:47.364Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:47.364Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:47.370Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:47.370Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T06:57:54.523Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T07:02:12.696Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T07:02:12.696Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T07:02:12.697Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:32:47.371Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:32:49.318Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:32:49.318Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:32:49.319Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T07:02:12.698Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T07:02:12.698Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T07:02:12.698Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:02:12.698Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:02:12.703Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T07:02:12.704Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:32:49.320Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:49.320Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:49.320Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:49.320Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:49.324Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:49.324Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T07:02:12.704Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T07:02:21.403Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-02-03T07:02:21.403Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T07:02:21.403Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:32:49.325Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:32:55.487Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:32:55.487Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:32:55.489Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T07:02:21.404Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T07:02:21.404Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T07:02:21.404Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:02:21.406Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:02:21.411Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T07:02:21.411Z] [runtime-status] Ephemeral server survived. {}
-[info] >  {"user":{"uid":"wUv1lZFQPzeAxKoDHYzQ9kjLZCc2","displayName":null,"photoURL":null,"email":"bishap@gmail.com","emailVerified":false,"phoneNumber":null,"isAnonymous":false,"tenantId":null,"providerData":[{"uid":"bishap@gmail.com","displayName":null,"photoURL":null,"email":"bishap@gmail.com","phoneNumber":null,"providerId":"password"}],"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","appName":"[DEFAULT]","authDomain":"parkit-27a48.firebaseapp.com","stsTokenManager":{"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","refreshToken":"AEu4IL2anrhnrej2_Bbj-SAueXd5AMUpLpcLUfTesT9aw6YyblHpShJfwBav1N5uilyUmdzPznpQBfRHLKvu4V8QRotVSPZq5jg6C6dc_GqqiZ9Qutql2vtmUt8ijMEpGUzQTS7IK7rot89nPhh4ggnzPQpnv4kPLCklXsBONHTF0XtugX7qgzijz9mzbVJXufXpwu_zWsq1","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1OTc0MmQyNjlhY2IzNWZiNjU3YzBjNGRkMmM3YjcyYWEzMTRiNTAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcGFya2l0LTI3YTQ4IiwiYXVkIjoicGFya2l0LTI3YTQ4IiwiYXV0aF90aW1lIjoxNTgwNzEzMzQyLCJ1c2VyX2lkIjoid1V2MWxaRlFQemVBeEtvREhZelE5a2pMWkNjMiIsInN1YiI6IndVdjFsWkZRUHplQXhLb0RIWXpROWtqTFpDYzIiLCJpYXQiOjE1ODA3MTMzNDIsImV4cCI6MTU4MDcxNjk0MiwiZW1haWwiOiJiaXNoYXBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImJpc2hhcEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.cSA1fNOoBCrJVHqjYEsjENjMgadAwdOGko523gexbHTQ4Fi039bvXmQKyIp-juHf1v796PPTh0qztxdEn4ZlKTXdv-LGt7A_XJuOmgZFy_auy6NxheXqYWfFCK-kmetkajx5d2r3PH4Pl8kM2b99X_Ernj1bsjh8Yla567K1Wxe7uv0ZuH5E6BUEzv0iccXFyLT9-JBgV7VLyauHm3W_OLrXIXy4lEpMWxj4jT8jhTtAtwiNmIka57hDY1b0xwS7oadz8GElGqs0r2pXPUdHlu1oje0MjKwiIhO8FurzfMBiHgMYx04Ur7z6H5yKlRktM0IHrZ5ArbbIxWnoRqpSxQ","expirationTime":1580716943212},"redirectEventId":null,"lastLoginAt":"1580713342835","createdAt":"1580713071306"},"credential":null,"additionalUserInfo":{"providerId":"password","isNewUser":false},"operationType":"signIn"}
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T07:02:24.565Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T07:02:24.762Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T07:02:24.762Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T07:02:24.763Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T07:02:24.764Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T07:02:24.764Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T07:02:24.764Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:02:24.764Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:02:24.768Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T07:02:24.768Z] [runtime-status] Ephemeral server survived. {}
-[info] >  userID wUv1lZFQPzeAxKoDHYzQ9kjLZCc2
-[info] >  success { email: 'bishap@gmail.com',
-[info] >    userId: 'wUv1lZFQPzeAxKoDHYzQ9kjLZCc2',
-[info] >    createdAt: '2020-02-03T06:57:53.132Z' }
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T07:02:27.926Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T07:02:43.166Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T07:02:43.166Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T07:02:43.166Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T07:02:43.167Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T07:02:43.167Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T07:02:43.167Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:02:43.168Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:02:43.173Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T07:02:43.174Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:32:55.489Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:32:55.489Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:32:55.490Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:55.490Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:32:55.498Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:32:55.502Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T07:02:43.174Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T07:04:30.720Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T07:04:30.720Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T07:04:30.722Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:32:55.502Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:33:31.331Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:33:31.331Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:33:31.332Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T07:04:30.722Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T07:04:30.722Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T07:04:30.725Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:04:30.726Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:04:30.732Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T07:04:30.736Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:33:31.333Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:33:31.333Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:33:31.333Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:31.333Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:31.341Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:33:31.342Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T07:04:30.737Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T07:04:59.429Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T07:04:59.429Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T07:04:59.429Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:33:31.345Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:33:37.889Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
+[debug] [2020-02-04T09:33:37.889Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:33:37.890Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T07:04:59.429Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T07:04:59.429Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T07:04:59.430Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:04:59.430Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:04:59.435Z] [runtime-status] Ephemeral server used! {}
-[info] >  naya userrr
-[info] >  naya@gmail.com dataaa
-[debug] [2020-02-03T07:04:59.435Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T07:05:02.697Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T07:05:02.722Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T07:05:02.723Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T07:05:02.724Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T07:05:02.725Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T07:05:02.726Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T07:05:02.727Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:05:02.729Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T07:05:02.737Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T07:05:02.738Z] [runtime-status] Ephemeral server survived. {}
-[info] >  token verify error
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T07:05:03.262Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:49:05.103Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-02-03T08:49:05.103Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T08:49:05.103Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:49:05.104Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:49:05.104Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:49:05.105Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:05.106Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:05.110Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:49:05.111Z] [runtime-status] Ephemeral server survived. {}
-[info] >  {"user":{"uid":"wUv1lZFQPzeAxKoDHYzQ9kjLZCc2","displayName":null,"photoURL":null,"email":"bishap@gmail.com","emailVerified":false,"phoneNumber":null,"isAnonymous":false,"tenantId":null,"providerData":[{"uid":"bishap@gmail.com","displayName":null,"photoURL":null,"email":"bishap@gmail.com","phoneNumber":null,"providerId":"password"}],"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","appName":"[DEFAULT]","authDomain":"parkit-27a48.firebaseapp.com","stsTokenManager":{"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","refreshToken":"AEu4IL0SuTfHC_Ti_mgEWX2tLMylD90WF1u9AoTuYSqA15wOWIayAxYRZm0QkTwRnaVhxGybX0ESm-PGIOEePhhxm7iYJysKZrB2pfGWwgoaJL4oTyfkT99fyiFdPbyL_6oBIg9e1AKpvTyDZNBQt5rk9gZ_P8VNjr9P5Md3EwUXwZ9hSToHVksoX3CX_9z6Hg6_m_6n7kRg","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1OTc0MmQyNjlhY2IzNWZiNjU3YzBjNGRkMmM3YjcyYWEzMTRiNTAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcGFya2l0LTI3YTQ4IiwiYXVkIjoicGFya2l0LTI3YTQ4IiwiYXV0aF90aW1lIjoxNTgwNzE5NzQ2LCJ1c2VyX2lkIjoid1V2MWxaRlFQemVBeEtvREhZelE5a2pMWkNjMiIsInN1YiI6IndVdjFsWkZRUHplQXhLb0RIWXpROWtqTFpDYzIiLCJpYXQiOjE1ODA3MTk3NDYsImV4cCI6MTU4MDcyMzM0NiwiZW1haWwiOiJiaXNoYXBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImJpc2hhcEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.B4UTb15cv0bAXPg28ifxClcQFhfNKZlR8zGaUqneIYBP7vwc1COWFOhRBVJN9XKcT3GnnBAT13iR5EImYumC_LF3AKseJTNk7hfmnz0Qug8emnBZJkVb9hi4k97_Mdyn0cAw7jL4nWHIjPnQjS5iTwPBUJYh4FYY7rsAHgPVJ5ynXSaKnA6zicCFM_TvCLQG238-uRFzr279Q2lF_tXsV5SmSzpX1sn_TtIP0tGyDW3T2k0D3_F3iRlZesPHhPs8jap1bj48E3e_WxO9vU5uv6ykZcMSH1JPvrmevpr5eSJHbc0s6S-FKN9keGNX2SR7E7Ek2A9cAAa8I5I33ugQxw","expirationTime":1580723346731},"redirectEventId":null,"lastLoginAt":"1580719746387","createdAt":"1580713071306"},"credential":null,"additionalUserInfo":{"providerId":"password","isNewUser":false},"operationType":"signIn"}
+[debug] [2020-02-04T09:33:37.891Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:33:37.891Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:33:37.891Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:37.892Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:37.900Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:33:37.900Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~2s
-[debug] [2020-02-03T08:49:08.072Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:49:08.237Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:49:08.238Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T08:49:08.238Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:33:40.171Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:33:40.265Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:33:40.265Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:33:40.267Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:49:08.238Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:49:08.238Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:49:08.239Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:08.239Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:08.242Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:49:08.242Z] [runtime-status] Ephemeral server survived. {}
-[info] >  userID wUv1lZFQPzeAxKoDHYzQ9kjLZCc2
-[info] >  success { email: 'bishap@gmail.com',
-[info] >    userId: 'wUv1lZFQPzeAxKoDHYzQ9kjLZCc2',
-[info] >    createdAt: '2020-02-03T06:57:53.132Z' }
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T08:49:12.155Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:49:21.893Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:49:21.894Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T08:49:21.894Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:49:21.894Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:49:21.894Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:49:21.895Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:21.895Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:21.898Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:49:21.899Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:33:40.267Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:33:40.267Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:33:40.267Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:40.268Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:40.270Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:33:40.270Z] [runtime-status] Ephemeral server survived. {}
+[info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:49:21.899Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:49:31.841Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-02-03T08:49:31.842Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T08:49:31.843Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:33:41.198Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:33:44.988Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:33:44.988Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:33:44.990Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:49:31.844Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:49:31.844Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:49:31.844Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:31.845Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:31.852Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:49:31.854Z] [runtime-status] Ephemeral server survived. {}
-[info] >  {"user":{"uid":"wUv1lZFQPzeAxKoDHYzQ9kjLZCc2","displayName":null,"photoURL":null,"email":"bishap@gmail.com","emailVerified":false,"phoneNumber":null,"isAnonymous":false,"tenantId":null,"providerData":[{"uid":"bishap@gmail.com","displayName":null,"photoURL":null,"email":"bishap@gmail.com","phoneNumber":null,"providerId":"password"}],"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","appName":"[DEFAULT]","authDomain":"parkit-27a48.firebaseapp.com","stsTokenManager":{"apiKey":"AIzaSyCL7pm9iDUUtMkDiqmHdqTCppRqR-MypQ4","refreshToken":"AEu4IL2MIUpZdSevTCEmwMV5JM3uQy6qocoOVE89Zfe0CxE4hZWSbafxFsa5NR65ivJ0Jb5zZvFGiaUil-7bXIEkXAdx8YRYB_zRg6L70C2vSYuQJGHuCmbSFt05Loc1P-IQsPe8wyXB_zj7UcUBa8rDyokdRUEQ6ipg7QfBkiS8MTmNs4kNT1dQuYU0Pni-vpdVpiswLo4D","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1OTc0MmQyNjlhY2IzNWZiNjU3YzBjNGRkMmM3YjcyYWEzMTRiNTAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcGFya2l0LTI3YTQ4IiwiYXVkIjoicGFya2l0LTI3YTQ4IiwiYXV0aF90aW1lIjoxNTgwNzE5NzczLCJ1c2VyX2lkIjoid1V2MWxaRlFQemVBeEtvREhZelE5a2pMWkNjMiIsInN1YiI6IndVdjFsWkZRUHplQXhLb0RIWXpROWtqTFpDYzIiLCJpYXQiOjE1ODA3MTk3NzMsImV4cCI6MTU4MDcyMzM3MywiZW1haWwiOiJiaXNoYXBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImJpc2hhcEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.ooStGLWiNAKGKy71j2F1kzYZIqb_vRLLieg3XNkOGjlLCvJ2BtoiU4XVnocqrX5zybIUVjtPYmG7225uub89Z3MNtWFkPXBdfzu2khc4Iz5flJUEc6tqRdAJYs3NLXrlnQT66bPgISbPwDnAj_K-mIVDAkTPFkviZ66MUYL6tj9F_uJwfsNWUV8IxOiy9c5HvMKrDm4zByhlMpq2v2Luf8j2TmgYmviU_5URVYrRm--7iYKCWW6hUIcTZbgnVGdffNoJa7Cm6qcZNDZp2AnzOv8YZm1yMAGquf7aBTzRkVz60UR7q8bmN9b87HMozstOPfoMX9TmnXLD54dxcSmbTw","expirationTime":1580723373445},"redirectEventId":null,"lastLoginAt":"1580719746387","createdAt":"1580713071306"},"credential":null,"additionalUserInfo":{"providerId":"password","isNewUser":false},"operationType":"signIn"}
+[debug] [2020-02-04T09:33:44.990Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:33:44.990Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:33:44.990Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:44.991Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:44.995Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:33:44.995Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:33:44.997Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:33:47.616Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:33:47.616Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:33:47.617Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:33:47.618Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: BUSY
+[debug] [2020-02-04T09:33:47.618Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:33:47.618Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:33:47.618Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:33:47.618Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:47.619Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:47.620Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:33:47.620Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:33:47.620Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:33:47.621Z] {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:33:47.621Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:33:47.624Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:33:47.624Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:33:47.624Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:33:47.626Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:33:47.626Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:33:47.722Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:33:47.722Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:33:47.726Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:33:47.726Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:33:47.726Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:33:47.726Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:47.727Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:33:47.730Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:33:47.731Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:33:47.732Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:33:48.767Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: IDLE
+[debug] [2020-02-04T09:34:05.755Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:34:05.756Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:34:05.757Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:34:05.758Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:34:05.758Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:34:05.758Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:34:05.758Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:34:05.768Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:34:05.768Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:34:05.769Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:34:53.994Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:34:53.994Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:34:53.997Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:34:53.997Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:34:53.998Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:34:53.998Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:34:53.998Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:34:54.005Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:34:54.006Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:34:54.010Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:34:59.349Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:34:59.349Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:34:59.353Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:34:59.353Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:34:59.354Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:34:59.354Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:34:59.354Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:34:59.357Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:34:59.358Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:34:59.358Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:35:01.453Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:35:01.453Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:35:01.453Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:35:01.454Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:35:01.454Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:35:01.454Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:35:01.455Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:35:01.461Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:35:01.461Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:35:01.461Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:35:01.557Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:35:01.557Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:35:01.558Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:35:01.558Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:35:01.558Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:35:01.559Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:35:01.559Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:35:01.563Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:35:01.564Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:35:01.564Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:35:05.025Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:35:05.025Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:35:05.027Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:35:05.027Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:35:05.027Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:35:05.027Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:35:05.028Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:35:05.035Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:35:05.036Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:35:05.036Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:36:06.101Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:36:06.102Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:36:06.105Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:36:06.106Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:36:06.106Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:36:06.106Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:06.106Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:06.117Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:36:06.117Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:36:06.117Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:36:27.293Z] Accepted request GET /parkit-27a48/us-central1/api/favicon.ico --> api
+[debug] [2020-02-04T09:36:27.293Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:36:27.295Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:36:27.295Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:36:27.295Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:36:27.295Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:27.296Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:27.305Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:36:27.305Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:36:27.305Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:36:27.313Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:36:27.313Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:36:27.315Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:36:27.315Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:36:27.315Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:36:27.315Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:27.316Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:27.320Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:36:27.320Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:36:27.320Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:36:27.330Z] Accepted request GET /parkit-27a48/us-central1/api/logo512.png --> api
+[debug] [2020-02-04T09:36:27.330Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:36:27.331Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:36:27.331Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:36:27.331Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:36:27.332Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:27.332Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:27.335Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:36:27.336Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:36:27.336Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:36:54.033Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
+[debug] [2020-02-04T09:36:54.033Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:36:54.035Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:36:54.035Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:36:54.035Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:36:54.035Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:54.057Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:54.064Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:36:54.064Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~2s
-[debug] [2020-02-03T08:49:34.767Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:49:34.989Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:49:34.989Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T08:49:34.991Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:36:56.109Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:36:56.186Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:36:56.186Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:36:56.188Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:49:34.991Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:49:34.991Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:49:34.992Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:34.993Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:34.999Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:49:34.999Z] [runtime-status] Ephemeral server survived. {}
-[info] >  userID wUv1lZFQPzeAxKoDHYzQ9kjLZCc2
-[info] >  success { createdAt: '2020-02-03T06:57:53.132Z',
-[info] >    email: 'bishap@gmail.com',
-[info] >    userId: 'wUv1lZFQPzeAxKoDHYzQ9kjLZCc2' }
+[debug] [2020-02-04T09:36:56.189Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:36:56.189Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:36:56.190Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:56.191Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:56.195Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:36:56.196Z] [runtime-status] Ephemeral server survived. {}
+[info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:49:36.114Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:49:49.906Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:49:49.906Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T08:49:49.908Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:36:57.223Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:36:59.922Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:36:59.922Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:36:59.924Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:49:49.908Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:49:49.908Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:49:49.908Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:49.909Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:49:49.917Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:49:49.918Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:36:59.925Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:36:59.925Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:36:59.925Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:59.925Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:36:59.931Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:36:59.931Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:49:49.919Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:50:31.676Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T08:50:31.676Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T08:50:31.678Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:36:59.931Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:04.252Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:37:04.252Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:04.253Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:37:04.253Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: BUSY
+[debug] [2020-02-04T09:37:04.257Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:50:31.678Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:50:31.678Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:50:31.678Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:50:31.679Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:50:31.683Z] [runtime-status] Ephemeral server used! {}
-[info] >  naya userrr
-[info] >  nayi@gmail.com dataaa
-[debug] [2020-02-03T08:50:31.684Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T08:50:35.105Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:50:35.132Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:50:35.133Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: BUSY
-[debug] [2020-02-03T08:50:35.134Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:04.257Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:04.257Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:04.257Z] {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:04.258Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:04.258Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:50:35.135Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:50:35.136Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:50:35.146Z] {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:50:35.167Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_10048.sock"}
-[debug] [2020-02-03T08:50:35.184Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:50:35.184Z] [runtime-status] Ephemeral server survived. {}
-[info] >  userID RegrJRz4SpYsprNpLFjdyzr7L9x1
-[info] >  success { email: 'nayi@gmail.com',
-[info] >    userId: 'RegrJRz4SpYsprNpLFjdyzr7L9x1',
-[info] >    createdAt: '2020-02-03T08:50:35.098Z' }
+[debug] [2020-02-04T09:37:04.258Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:04.258Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:04.259Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.259Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.272Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:04.272Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:04.273Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:04.274Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:50:36.221Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: IDLE
-[debug] [2020-02-03T08:52:05.443Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js changed, reloading triggers
-[debug] [2020-02-03T08:52:06.445Z] [worker-pool]: Shutting down IDLE worker (api)
-[debug] [2020-02-03T08:52:06.457Z] [worker-~diagnostic~-b0beb1cf-a58c-4fa7-a18a-c2230273a1fe]: BUSY
-[debug] [2020-02-03T08:52:06.459Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: exited
-[debug] [2020-02-03T08:52:06.459Z] [worker-api-4abee34c-00da-44aa-8aac-f13a0698ec8e]: FINISHED
-[debug] [2020-02-03T08:52:06.771Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T08:52:06.773Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T08:52:06.775Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T08:52:06.776Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T08:52:06.777Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T08:52:07.202Z] [worker-~diagnostic~-b0beb1cf-a58c-4fa7-a18a-c2230273a1fe]: exited
-[debug] [2020-02-03T08:52:07.202Z] [worker-~diagnostic~-b0beb1cf-a58c-4fa7-a18a-c2230273a1fe]: FINISHED
-[debug] [2020-02-03T08:52:18.246Z] File /home/thinley/Desktop/reactLearn/parkIT/functions/handlers/auth.js changed, reloading triggers
-[debug] [2020-02-03T08:52:19.255Z] [worker-~diagnostic~-10013b06-ed11-481f-a0c5-49285048b1bc]: BUSY
-[debug] [2020-02-03T08:52:19.541Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T08:52:19.543Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T08:52:19.544Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T08:52:19.545Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T08:52:19.545Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T08:52:19.971Z] [worker-~diagnostic~-10013b06-ed11-481f-a0c5-49285048b1bc]: exited
-[debug] [2020-02-03T08:52:19.971Z] [worker-~diagnostic~-10013b06-ed11-481f-a0c5-49285048b1bc]: FINISHED
-[debug] [2020-02-03T08:53:48.723Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:53:48.728Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:53:48.818Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:53:48.823Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: BUSY
-[debug] [2020-02-03T08:53:49.086Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T08:53:49.089Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T08:53:49.093Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T08:53:49.093Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T08:53:49.093Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T08:53:49.142Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/thinley/Desktop/reactLearn/parkIT/functions","node_version":"10.15.3"}
-[debug] [2020-02-03T08:53:49.145Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2020-02-03T08:53:49.147Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2020-02-03T08:53:49.150Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T08:53:49.151Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/thinley/Desktop/reactLearn/parkIT/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2020-02-03T08:53:49.763Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:04.275Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:04.347Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:37:04.347Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:04.347Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:53:49.764Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:53:49.764Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:53:49.771Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:53:49.772Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:53:49.809Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:53:49.843Z] [runtime-status] Ephemeral server survived. {}
-[debug] [2020-02-03T08:53:49.846Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:53:49.851Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:53:49.851Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:53:49.855Z] {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:53:49.856Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:53:49.877Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:53:49.888Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:04.348Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:04.348Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:04.350Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.350Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.354Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:04.355Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:53:49.889Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: IDLE
-[info] >  userID RegrJRz4SpYsprNpLFjdyzr7L9x1
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T08:53:53.558Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:54:17.205Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:54:17.205Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:54:17.205Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:04.355Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:04.376Z] Accepted request GET /parkit-27a48/us-central1/api/favicon.ico --> api
+[debug] [2020-02-04T09:37:04.377Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:04.377Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:54:17.206Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:54:17.206Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:54:17.207Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:54:17.207Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:54:17.213Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:54:17.216Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:04.377Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:04.377Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:04.378Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.378Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.380Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:04.381Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:54:17.216Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:54:45.178Z] Accepted request POST /parkit-27a48/us-central1/api/register --> api
-[debug] [2020-02-03T08:54:45.178Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:54:45.180Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:04.381Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:04.388Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:37:04.388Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:04.392Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:54:45.180Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:54:45.180Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:54:45.180Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:54:45.181Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:54:45.197Z] [runtime-status] Ephemeral server used! {}
-[info] >  bikash@gmail.com dataaa
-[debug] [2020-02-03T08:54:45.198Z] [runtime-status] Ephemeral server survived. {}
-[debug] [2020-02-03T08:54:48.801Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:54:48.802Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: BUSY
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T08:54:48.803Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:54:48.804Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:54:48.807Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:54:48.807Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:54:48.810Z] {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:54:48.816Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:54:48.826Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:54:48.881Z] [runtime-status] Ephemeral server survived. {}
-[info] >  userID yCSinlkUDBTRqtGeA75o4XN2XTx1
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-02-03T08:54:52.668Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: IDLE
-[debug] [2020-02-03T08:56:20.084Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:56:20.084Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:56:20.086Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:56:20.086Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:56:20.086Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:56:20.086Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:56:20.087Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:56:20.091Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:56:20.091Z] [runtime-status] Ephemeral server survived. {}
-[debug] [2020-02-03T08:56:20.186Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:56:20.187Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: BUSY
-[debug] [2020-02-03T08:56:20.188Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:56:20.188Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:56:20.188Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:56:20.189Z] {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:56:20.189Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:56:20.193Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:56:20.193Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:04.392Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:04.392Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:04.392Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.393Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.395Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:04.395Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:56:20.194Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: IDLE
-[info] >  userID yCSinlkUDBTRqtGeA75o4XN2XTx1
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:56:21.090Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:56:24.200Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:56:24.200Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:56:24.200Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:04.396Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:04.401Z] Accepted request GET /parkit-27a48/us-central1/api/logo512.png --> api
+[debug] [2020-02-04T09:37:04.401Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:04.405Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:56:24.201Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:56:24.201Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:56:24.202Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:56:24.206Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:56:24.209Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:56:24.210Z] [runtime-status] Ephemeral server survived. {}
-[debug] [2020-02-03T08:56:24.281Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:56:24.281Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: BUSY
-[debug] [2020-02-03T08:56:24.282Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:04.405Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:04.405Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:04.406Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.406Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:04.410Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:04.412Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:04.413Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:05.337Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: IDLE
+[debug] [2020-02-04T09:37:07.496Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
+[debug] [2020-02-04T09:37:07.496Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:07.496Z] Accepted request GET /parkit-27a48/us-central1/api/A --> api
+[debug] [2020-02-04T09:37:07.496Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: BUSY
+[debug] [2020-02-04T09:37:07.497Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:56:24.283Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:56:24.283Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:56:24.283Z] {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:56:24.284Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:56:24.286Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:56:24.287Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:56:24.287Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: IDLE
-[info] >  userID yCSinlkUDBTRqtGeA75o4XN2XTx1
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:56:25.191Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:57:42.916Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:57:42.916Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:57:42.918Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:07.497Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:07.497Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:07.497Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:07.498Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:07.498Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:57:42.918Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:57:42.918Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:57:42.918Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:57:42.919Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:57:42.923Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:57:42.923Z] [runtime-status] Ephemeral server survived. {}
-[debug] [2020-02-03T08:57:43.087Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:57:43.087Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: BUSY
-[debug] [2020-02-03T08:57:43.088Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:07.499Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:07.499Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:07.500Z] {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.500Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.513Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:07.513Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:07.515Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:07.526Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:07.534Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: IDLE
+[debug] [2020-02-04T09:37:07.627Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:37:07.628Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: BUSY
+[debug] [2020-02-04T09:37:07.628Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:57:43.089Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:57:43.089Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:57:43.089Z] {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:57:43.089Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:57:43.092Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:57:43.093Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:07.628Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:07.628Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:07.629Z] {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.629Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.631Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:07.633Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:57:43.095Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: IDLE
-[info] >  userID yCSinlkUDBTRqtGeA75o4XN2XTx1
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:57:44.596Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:58:20.212Z] Accepted request GET /parkit-27a48/us-central1/api/user --> api
-[debug] [2020-02-03T08:58:20.212Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:58:20.212Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:07.633Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: IDLE
+[debug] [2020-02-04T09:37:07.647Z] Accepted request GET /parkit-27a48/us-central1/api/favicon.ico --> api
+[debug] [2020-02-04T09:37:07.648Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: BUSY
+[debug] [2020-02-04T09:37:07.648Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:58:20.213Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:58:20.213Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:58:20.214Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:58:20.215Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:58:20.226Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:58:20.226Z] [runtime-status] Ephemeral server survived. {}
-[debug] [2020-02-03T08:58:20.302Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:58:20.303Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: BUSY
-[debug] [2020-02-03T08:58:20.304Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:07.648Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:07.648Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:07.649Z] {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.649Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.650Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:07.653Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:07.653Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: IDLE
+[debug] [2020-02-04T09:37:07.662Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:37:07.662Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: BUSY
+[debug] [2020-02-04T09:37:07.662Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:58:20.304Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:58:20.304Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:58:20.304Z] {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:58:20.305Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11673.sock"}
-[debug] [2020-02-03T08:58:20.310Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:58:20.310Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:07.662Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:07.662Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:07.663Z] {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.663Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.665Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:07.666Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:58:20.311Z] [worker-api-86601680-c1f8-4503-93ed-b3b55dc47ef8]: IDLE
-[info] >  userID yCSinlkUDBTRqtGeA75o4XN2XTx1
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:58:21.304Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:59:21.263Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T08:59:21.263Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:59:21.265Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:07.666Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: IDLE
+[debug] [2020-02-04T09:37:07.674Z] Accepted request GET /parkit-27a48/us-central1/api/logo512.png --> api
+[debug] [2020-02-04T09:37:07.674Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: BUSY
+[debug] [2020-02-04T09:37:07.676Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:59:21.265Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:59:21.265Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:59:21.265Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:59:21.266Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:59:21.270Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:59:21.271Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:07.676Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:07.676Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:07.677Z] {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.677Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4885.sock"}
+[debug] [2020-02-04T09:37:07.679Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:07.680Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:59:21.272Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:59:33.580Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-02-03T08:59:33.581Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:59:33.583Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:07.680Z] [worker-api-fa0d106a-3ac1-4e48-aa05-20e1f799ef97]: IDLE
+[info] >  userID aMPcpBQM0jgy7JidvIhSfEsEyT43
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:08.261Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:22.070Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:37:22.070Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:22.070Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:59:33.583Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:59:33.583Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:59:33.584Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:59:33.584Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:59:33.588Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:59:33.590Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:22.071Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:22.071Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:22.071Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:22.072Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:22.079Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:22.079Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:59:34.829Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T08:59:39.478Z] Accepted request POST /parkit-27a48/us-central1/api/login --> api
-[debug] [2020-02-03T08:59:39.479Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T08:59:39.482Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:22.080Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:22.124Z] Accepted request GET /parkit-27a48/us-central1/api/favicon.ico --> api
+[debug] [2020-02-04T09:37:22.124Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:22.125Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T08:59:39.483Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T08:59:39.483Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T08:59:39.485Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:59:39.486Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T08:59:39.493Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T08:59:39.493Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:22.125Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:22.125Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:22.125Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:22.126Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:22.134Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:22.135Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T08:59:39.493Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T09:00:48.222Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T09:00:48.222Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T09:00:48.223Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:22.135Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:22.140Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:37:22.140Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:22.141Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T09:00:48.223Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T09:00:48.223Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T09:00:48.224Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T09:00:48.224Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T09:00:48.228Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T09:00:48.229Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:22.141Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:22.141Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:22.141Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:22.142Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:22.144Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:22.144Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T09:00:48.229Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
-[debug] [2020-02-03T09:01:20.437Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
-[debug] [2020-02-03T09:01:20.437Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: BUSY
-[debug] [2020-02-03T09:01:20.438Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2020-02-04T09:37:22.145Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:22.149Z] Accepted request GET /parkit-27a48/us-central1/api/logo512.png --> api
+[debug] [2020-02-04T09:37:22.149Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:22.154Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-02-03T09:01:20.438Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
-[debug] [2020-02-03T09:01:20.438Z] [runtime-status] Running api in mode HTTPS {}
-[debug] [2020-02-03T09:01:20.438Z] {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T09:01:20.439Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_11666.sock"}
-[debug] [2020-02-03T09:01:20.444Z] [runtime-status] Ephemeral server used! {}
-[debug] [2020-02-03T09:01:20.444Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2020-02-04T09:37:22.154Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:22.154Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:22.155Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:22.155Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:22.157Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:22.159Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "api" in ~1s
-[debug] [2020-02-03T09:01:20.444Z] [worker-api-939f0af5-683d-4196-87da-317416ed716c]: IDLE
+[debug] [2020-02-04T09:37:22.159Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:24.445Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:37:24.445Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:24.448Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:37:24.448Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:24.448Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:24.449Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:24.449Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:24.455Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:24.458Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:24.458Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:24.494Z] Accepted request GET /parkit-27a48/us-central1/api/favicon.ico --> api
+[debug] [2020-02-04T09:37:24.494Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:24.494Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:37:24.495Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:24.495Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:24.495Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:24.495Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:24.498Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:24.500Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:24.500Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:24.506Z] Accepted request GET /parkit-27a48/us-central1/api/logo192.png --> api
+[debug] [2020-02-04T09:37:24.507Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:24.509Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:37:24.509Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:24.509Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:24.510Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:24.510Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:24.512Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:24.513Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:24.513Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
+[debug] [2020-02-04T09:37:24.518Z] Accepted request GET /parkit-27a48/us-central1/api/logo512.png --> api
+[debug] [2020-02-04T09:37:24.519Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: BUSY
+[debug] [2020-02-04T09:37:24.522Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-04T09:37:24.523Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-04T09:37:24.523Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2020-02-04T09:37:24.523Z] {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:24.523Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_4565.sock"}
+[debug] [2020-02-04T09:37:24.525Z] [runtime-status] Ephemeral server used! {}
+[debug] [2020-02-04T09:37:24.526Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-04T09:37:24.526Z] [worker-api-bcb57de2-ffb7-4c6d-a4e6-a316a38754e4]: IDLE
