@@ -1,10 +1,13 @@
 const { admin, db } = require('./utils/admin')
 const functions = require('firebase-functions');
 const app = require('express')();//initializaing the app
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 const firebaseConfig = require('./utils/config')
 const firebase = require('firebase');
 firebase.initializeApp(firebaseConfig);// Initializing Firebase
-const { signIn,signUp,getAuthenticatedUser,resetPassword } = require('./handlers/auth');
+const { signIn,signUp,getAuthenticatedUser,updateProfile } = require('./handlers/auth');
 const authMiddleware = (req, res, next) => {
     let idToken;
     if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
@@ -34,8 +37,8 @@ const authMiddleware = (req, res, next) => {
 
 app.post('/register',signUp);
 app.post('/login',signIn);
-app.post('/forgot-password',resetPassword);
 app.get('/user', authMiddleware, getAuthenticatedUser);
+app.post('/user/update-profile', authMiddleware, updateProfile);
 
 
 

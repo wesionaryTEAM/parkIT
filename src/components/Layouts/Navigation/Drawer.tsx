@@ -170,6 +170,8 @@ function ResponsiveDrawer(props: any) {
 
     }
 
+   
+
     const menuId = 'primary-search-account-menu';
     // AppBar Dropdown Menu
     const renderMenu = (
@@ -181,7 +183,7 @@ function ResponsiveDrawer(props: any) {
             transformOrigin={{ vertical: 'top', horizontal: 'right' }}
             open={isMenuOpen}
             onClose={handleMenuClose}>
-            <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+            <MenuItem onClick={()=>history.push("/profile_add")}>Profile</MenuItem>
             <MenuItem onClick={handleMenuClose}>My account</MenuItem>
             <MenuItem onClick={handleLogout}>Logout</MenuItem>
         </Menu>

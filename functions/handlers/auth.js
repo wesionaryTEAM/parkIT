@@ -1,10 +1,10 @@
 const { admin, db, firebase } = require('../utils/admin');
-const { validateSignUPData, validateLoginData } = require('../utils/helper')
+const { validateSignUPData, validateLoginData, reduceUserDetails,validateProfileData } = require('../utils/helper')
 
 exports.signUp = (req, res) => {
     const newUser = {
-        firstname:req.body.firstname,
-        lastname:req.body.lastname,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
         email: req.body.email,
         password: req.body.password,
         confirmPassword: req.body.confirmPassword,
@@ -86,10 +86,9 @@ exports.signIn = (req, res) => {
 //get owner details
 exports.getAuthenticatedUser = (req, res) => {
     let userData = {};
-    //fetching single data
-    db.collection('users').doc(req.user.userId).get()
+     db.collection('users').doc(req.user.userId).get()
         .then(doc => {
-            if (doc.exists)//checking if document exist or not
+            if (doc.exists)
             {
                 userData.credentials = doc.data();
                 return res.status(200).json(userData);
@@ -103,6 +102,27 @@ exports.getAuthenticatedUser = (req, res) => {
         })
 
 }
+
+
+
+
+exports.updateProfile = (req, res) => {
+
+    let profileData = reduceUserDetails(req)
+    
+    const { valid, errors } = validateProfileData(profileData);
+    if (!valid) return res.status(400).json(errors)
+    db.collection('users').doc(req.user.userId).update(profileData)
+        .then(() => {
+            return res.status(200).json({ message: 'Profile updated successfully!' })
+        }).catch((err) => {
+            return res.json({ error: err.message })
+        })
+
+
+
+}
+
 
 
 
