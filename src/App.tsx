@@ -37,7 +37,7 @@ const App: React.FC = () => {
               exact
               path='/register'
               component={Register} />
-            <Route
+            <PrivateRoute
             exact
             path="/profile_add"
             component={ProfileAdd} />
