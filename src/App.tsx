@@ -12,6 +12,7 @@ import { store, persistor } from './redux/store';
 import { CheckAuthentication } from './utils/CheckAuthentication'
 import ProfileAdd from './components/pages/Profile/ProfileAdd';
 import { PersistGate } from 'redux-persist/integration/react';
+import { SnackbarProvider } from 'notistack';
 
 
 const App: React.FC = () => {
@@ -22,32 +23,34 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <Router>
-            <Switch>
-              <PrivateRoute
-                exact
-                path="/"
-                component={Index} />
+      <SnackbarProvider maxSnack={3}>
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <Router>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/"
+                  component={Index} />
 
-              <GuestRoute
-                exact
-                path='/login'
-                component={Login} />
-              <GuestRoute
-                exact
-                path='/register'
-                component={Register} />
-              <PrivateRoute
-                exact
-                path="/profile_add"
-                component={ProfileAdd} />
+                <GuestRoute
+                  exact
+                  path='/login'
+                  component={Login} />
+                <GuestRoute
+                  exact
+                  path='/register'
+                  component={Register} />
+                <PrivateRoute
+                  exact
+                  path="/profile_add"
+                  component={ProfileAdd} />
 
-            </Switch>
-          </Router>
-        </PersistGate>
-      </Provider>
+              </Switch>
+            </Router>
+          </PersistGate>
+        </Provider>
+      </SnackbarProvider>
     </div>
   )
 }

@@ -76,8 +76,8 @@ const useStyles = makeStyles(theme => ({
 
 
 interface profileData extends userDataProps {
-    firstname: string;
-    lastname: string;
+    firstName: string;
+    lastName: string;
     password: string;
     confirmPassword: string;
 }
@@ -93,8 +93,8 @@ function Register(props: userDataProps) {
     const [values, setValues] = useState({
         email: "",
         password: "",
-        firstname: "",
-        lastname: "",
+        firstName: "",
+        lastName: "",
         confirmPassword: ""
     } as profileData);
     const [errors, setErrors] = useState({} as FormErrors);
@@ -115,8 +115,8 @@ function Register(props: userDataProps) {
             email: values.email,
             password: values.password,
             confirmPassword: values.confirmPassword,
-            firstname: values.firstname,
-            lastname: values.lastname
+            firstName: values.firstName,
+            lastName: values.lastName
         }
 
         dispatch(userRegister(userData, history))
@@ -139,6 +139,15 @@ function Register(props: userDataProps) {
     const validateForm = () => {
         const errors: { [key: string]: string } = {};
 
+        if (!validator.trim(values.firstName)) {
+            errors.firstName = "First Name field is required!";
+        }
+
+        if (!validator.trim(values.lastName)) {
+            errors.lastName = "Last Name field is required!";
+        }
+
+
         if (!validator.trim(values.email)) {
             errors.email = "Email field is required!";
         }
@@ -151,13 +160,7 @@ function Register(props: userDataProps) {
             errors.confirmPassword = "Password field is required!";
         }
 
-        if (!validator.trim(values.firstname)) {
-            errors.firstname = "Firstname is required!";
-        }
-
-        if (!validator.trim(values.lastname)) {
-            errors.lastname = "Lastname is required!";
-        }
+       
 
         if (values.password !== values.confirmPassword) {
             errors.confirmPassword = "Password not matched!";
@@ -208,30 +211,30 @@ function Register(props: userDataProps) {
                                         <TextField
                                             variant="outlined"
                                             margin="normal"
-                                            value={values.firstname}
+                                            value={values.firstName}
                                             fullWidth
-                                            id="firstname"
+                                            id="firstName"
                                             label="First Name*"
-                                            name="firstname"
+                                            name="firstName"
                                             type="text"
                                             onChange={handleChange}
-                                            helperText={errors.firstname}
-                                            error={errors.firstname ? true : false}
+                                            helperText={errors.firstName}
+                                            error={errors.firstName ? true : false}
                                         />
                                     </Grid>
                                     <Grid item xs={12} sm={12} md={6} lg={6}>
                                         <TextField
                                             variant="outlined"
                                             margin="normal"
-                                            value={values.lastname}
+                                            value={values.lastName}
                                             fullWidth
-                                            id="lastname"
+                                            id="lastName"
                                             label="Last Name*"
-                                            name="lastname"
+                                            name="lastName"
                                             type="text"
                                             onChange={handleChange}
-                                            helperText={errors.lastname}
-                                            error={errors.lastname ? true : false}
+                                            helperText={errors.lastName}
+                                            error={errors.lastName ? true : false}
                                         />
                                     </Grid>
                                 </Grid>

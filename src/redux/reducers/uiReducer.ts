@@ -1,7 +1,7 @@
 import { SET_ERRORS, LOADING_UI, CLEAR_ERRORS } from '../types'
 const initialState = {
     loading: false,
-    errors: null
+    errors: {}
 }
 
 export default function (state = initialState, action:any) {
@@ -17,7 +17,7 @@ export default function (state = initialState, action:any) {
             return {
                 ...state,
                 loading: false,
-                errors: null
+                errors: {}
 
             };
         case LOADING_UI:
