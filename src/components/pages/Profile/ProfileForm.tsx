@@ -59,16 +59,16 @@ interface ProfileFormData {
   firstName: string;
   lastName: string;
   name: string;
-  photoURL: string;
+  photoURL?: string;
   gender: string;
   birthday: string;
   city: string;
   province: string;
   phone: string;
-  emergencyContactName: string;
-  emergencyContactNumber: string;
-  newPhotoURL: string;
-  newPhotoObj: any;
+  emergencyContactName?: string;
+  emergencyContactNumber?: string;
+  newPhotoURL?: string;
+  newPhotoObj?: any;
 }
 
 interface FormError extends ProfileFormData {
@@ -83,16 +83,20 @@ interface state {
 
 function ProfileForm() {
   const classes = useStyles();
+  const userInfoFromStorage = JSON.parse(localStorage.getItem('userInfo') as string);
+  const dispatch = useDispatch();
+  const UI = useSelector((state: state) => state.UI)
+  const user = useSelector((state: state) => state.user)
+  const userInfoFromState = user.credentials;
   const [values, setValues] = useState({
-    firstName: "",
-    lastName: "",
+    firstName: userInfoFromState.firstName ? userInfoFromState.firstName : userInfoFromStorage.firstName,
+    lastName: userInfoFromState.lastName ? userInfoFromState.lastName : userInfoFromStorage.lastName,
     name: "",
     photoURL: "",
     gender: "",
     birthday: "",
     city: "",
     province: "",
-    country: "",
     phone: "",
     emergencyContactName: "",
     emergencyContactNumber: "",
@@ -100,9 +104,7 @@ function ProfileForm() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [errors, setErrors] = useState({} as FormError);
   const [loading, setLoading] = useState(false);
-  const dispatch = useDispatch();
-  const UI = useSelector((state: state) => state.UI)
-  const user = useSelector((state: state) => state.user)
+
 
 
   //functions
@@ -110,9 +112,29 @@ function ProfileForm() {
   useEffect(() => {
     if (UI.errors) {
       setErrors(UI.errors);
+    }else if(UI.errors.length===0)
+    {
+      setErrors(UI.errors);
     }
     setLoading(UI.loading);
   }, [UI])
+
+  useEffect(() => {
+    const userData = {} as any;
+    userData.birthday = userInfoFromState.birdthday ? userInfoFromState.birdthday : "";
+    userData.gender = userInfoFromState.gender ? userInfoFromState.gender : "";
+    userData.city = userInfoFromState.city ? userInfoFromState.city : "";
+    userData.province = userInfoFromState.province ? userInfoFromState.province : "";
+    userData.phone = userInfoFromState.phone ? userInfoFromState.phone : "";
+    userData.emergencyContactName = userInfoFromState.emergencyContactName ? userInfoFromState.emergencyContactName : "";
+    userData.emergencyContactNumber = userInfoFromState.emergencyContactNumber ? userInfoFromState.emergencyContactNumber : "";
+    userData.photoURL = userInfoFromState.photoURL ? userInfoFromState.photoURL : "";
+    userData.name="bikash";
+    userData.firstName=userInfoFromState.firstName;
+    userData.lastName=userInfoFromState.lastName;
+    setValues(userData);
+  }, [user.credentials])
+
 
   const handleDateChange = (date: any) => {
     setSelectedDate(date);
@@ -121,7 +143,6 @@ function ProfileForm() {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     setLoading(true);
-
     if (!validateForm()) {
       setLoading(false);
       return;
@@ -141,9 +162,9 @@ function ProfileForm() {
       errors.lastName = "Last Name is required!";
     }
 
-    if (!validator.trim(values.gender)) {
-      errors.gender = "Gender is required!";
-    }
+    // if (!validator.trim(values.gender)) {
+    //   errors.gender = "Gender is required!";
+    // }
 
     if (!validator.trim(values.phone)) {
       errors.phone = "Phone Number is required!";

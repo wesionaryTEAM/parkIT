@@ -1,10 +1,10 @@
 const { admin, db, firebase } = require('../utils/admin');
-const { validateSignUPData, validateLoginData, reduceUserDetails,validateProfileData } = require('../utils/helper')
+const { validateSignUPData, validateLoginData, reduceUserDetails, validateProfileData } = require('../utils/helper')
 
 exports.signUp = (req, res) => {
     const newUser = {
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
         email: req.body.email,
         password: req.body.password,
         confirmPassword: req.body.confirmPassword,
@@ -25,18 +25,22 @@ exports.signUp = (req, res) => {
         }).then(data => {
             userId = data.user.uid
             return data.user.getIdToken();
-        }).then(idToken => {
+        }).then(async idToken => {
             token = idToken
             const userCredentials = {
                 userId,
+                firstName: newUser.firstName,
+                lastName: newUser.lastName,
                 email: newUser.email,
                 createdAt: new Date().toISOString(),
             }
-
-            db.doc(`/users/${userId}`).set(userCredentials);
-
-        }).then(() => {
-            return res.status(201).json({ token })
+            const docRef = db.doc(`/users/${userId}`)
+           
+            await docRef.set(userCredentials);
+            const userDatas = await docRef.get();
+            const userData=userDatas.data();
+            userData.token = token;
+            return res.status(201).json({ userData })
 
         })
         .catch(err => {
@@ -65,10 +69,28 @@ exports.signIn = (req, res) => {
 
     if (!valid) return res.status(400).json(errors)
     firebase.auth().signInWithEmailAndPassword(user.email, user.password)
-        .then(data => {
-            return data.user.getIdToken();
-        }).then(token => {
-            return res.json({ token })
+        .then(async data => {
+            const token = await data.user.getIdToken();
+            const dataRef = await db.collection('users')
+                .doc(data.user.uid)
+                .get()
+                .then(dataRef => {
+                    if (dataRef.exists) {
+                        const userData = dataRef.data();
+                        userData.token = token;
+
+                        return res.status(200).json({ userData })
+
+
+                    } else {
+
+                        return status(404).json({ message: 'User not found' });
+                    }
+
+                })
+                .catch(err => {
+                    return res.status(500).json({ error: err.message });
+                });
         }).catch(err => {
             if (err.code == 'auth/wrong-password' || err.code == 'auth/user-not-found') {
                 return res.status(403).json({ message: 'Wrong credentials, Please try again' });
@@ -86,10 +108,9 @@ exports.signIn = (req, res) => {
 //get owner details
 exports.getAuthenticatedUser = (req, res) => {
     let userData = {};
-     db.collection('users').doc(req.user.userId).get()
+    db.collection('users').doc(req.user.userId).get()
         .then(doc => {
-            if (doc.exists)
-            {
+            if (doc.exists) {
                 userData.credentials = doc.data();
                 return res.status(200).json(userData);
 
@@ -109,7 +130,7 @@ exports.getAuthenticatedUser = (req, res) => {
 exports.updateProfile = (req, res) => {
 
     let profileData = reduceUserDetails(req)
-    
+
     const { valid, errors } = validateProfileData(profileData);
     if (!valid) return res.status(400).json(errors)
     db.collection('users').doc(req.user.userId).update(profileData)

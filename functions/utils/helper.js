@@ -1,17 +1,10 @@
-const { firebase } = require('../utils/admin');
 
 const isEmpty = (string) => {
-
     if (string.trim() === '') {
         return true;
     } else {
         return false;
     }
-
-
-
-
-
 
 }
 
@@ -54,10 +47,18 @@ const isValidMobile = (num) => {
 
 exports.validateSignUPData = (data) => {
 
+
     let errors = {};
+    if (isEmpty(data.firstName)) {
+        errors.firstName = "FirstName Filed Is Required!"
 
 
-    if (isEmpty(data.email)) {
+    } else if (isEmpty(data.lastName)) {
+        errors.lastName = "LastName Filed Is Required!"
+
+
+    }
+    else if (isEmpty(data.email)) {
         errors.email = "Email Filed Is Required!"
 
     } else if (!isEmail(data.email)) {
@@ -101,12 +102,12 @@ exports.validateProfileData = (data) => {
 
     if (!data.firstName) {
         errors.firstName = "FirstName filed is required!"
-    } 
-    
+    }
+
     if (!data.lastName) {
         errors.lastName = "LastName filed is required!"
 
-    } 
+    }
 
     if (data.phone) {
         response = isValidMobile(data.phone)
@@ -115,9 +116,9 @@ exports.validateProfileData = (data) => {
     }
 
     if (data.emergencyContactNumber) {
-        
+
         response = isValidMobile(data.emergencyContactNumber)
-       
+
         if (response.status)
             errors.emergencyContactNumber = response.message;
 
@@ -141,19 +142,8 @@ exports.reduceUserDetails = (req) => {
     if (data.phone)
         profileDetails.phone = data.phone
 
-
-
-
-
-
-    // if (!isEmpty(data.phone)) {
-
-    //     if (data.phone.trim().substring(0, 4) !== '+977') {
-    //         profileDetails.phone = `+977${data.phone.trim()}`
-    //     } else {
-    //         profileDetails.phone = data.phone
-    //     }
-    // }
+    if (data.gender)
+        profileDetails.gender = data.gender
 
     if (data.birthday)
         profileDetails.birthday = data.birthday
